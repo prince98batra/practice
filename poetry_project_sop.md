@@ -1,3 +1,4 @@
+
 # SOP: Managing a Poetry Project for Python
 
 **Owner**: Prince Batra  
@@ -19,12 +20,12 @@ This SOP provides detailed instructions on setting up a Poetry project for manag
 ---
 
 ## 🛠 Prerequisites  
-- Python 3.x and pip installed on the system  
+- Python 3.x and pip installed on the system   
 
 ---
 
 ## 1. Introduction  
-Poetry is a tool that helps manage Python packages and virtual environments easily. It keeps dependencies organized and ensures consistent environments across teams.
+Poetry is a Python dependency manager and packaging tool that simplifies the process of managing libraries and virtual environments. It allows developers to easily add dependencies, configure virtual environments, and run commands within isolated environments.
 
 ---
 
@@ -32,99 +33,83 @@ Poetry is a tool that helps manage Python packages and virtual environments easi
 
 ### 📍 Step 1: Install Python & pip (If not already installed)
 
-\`\`\`bash
+```bash
 sudo apt update
 sudo apt install python3 python3-pip -y
 python3 --version
 pip3 --version
-\`\`\`
-
-These commands ensure your system has the latest Python version and pip (Python package installer) installed.
-
----
+```
+This step ensures that Python 3 and pip are installed, which are required before installing Poetry.
 
 ### 📍 Step 2: Install Poetry
 
-\`\`\`bash
+```bash
 curl -sSL https://install.python-poetry.org | python3 -
-\`\`\`
+```
 
-This command downloads and runs the official Poetry installation script.
+To make Poetry available in your terminal session, update your shell configuration:
 
-Update your shell configuration:
-
-\`\`\`bash
+```bash
 echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
 source ~/.bashrc
 poetry --version
-\`\`\`
+```
 
-This ensures that Poetry is added to your terminal path and accessible globally from the terminal.
-
----
+This installs Poetry and adds it to your system's PATH.
 
 ### 📍 Step 3: Create a New Poetry Project
 
-\`\`\`bash
+```bash
 poetry new my_project
 cd my_project
-\`\`\`
+```
 
-Creates a standard Python project folder with all the required files and structure. The `cd` command takes you inside the project directory.
-
----
+This command will create a new project structure with:
+- `pyproject.toml`: The file that manages dependencies.
+- `my_project/`: Folder for your Python package.
+- `tests/`: Folder for unit tests.
 
 ### 📍 Step 4: Create & Activate Virtual Environment
 
-\`\`\`bash
+```bash
 poetry env use python3
 poetry env info
-\`\`\`
+```
 
-This sets up a dedicated environment just for this project. It keeps your global Python setup clean.
+To manually activate the environment, run:
 
-To manually activate:
-
-\`\`\`bash
+```bash
 source $(poetry env info --path)/bin/activate
-\`\`\`
+```
 
-This is helpful if you want to work inside the environment like a normal Python virtualenv.
-
----
+This step sets up a virtual environment isolated from your global Python environment.
 
 ### 📍 Step 5: Add Dependencies
 
-\`\`\`bash
+```bash
 poetry add requests pandas flask
-\`\`\`
+```
 
-Installs these libraries locally for the project and adds them to the `pyproject.toml` file automatically.
+You can confirm the added dependencies in the `pyproject.toml`:
 
-Check `pyproject.toml`:
-
-\`\`\`toml
+```toml
 [tool.poetry.dependencies]
 requests = "^2.31.0"
 pandas = "^2.2.1"
 flask = "^2.3.0"
-\`\`\`
+```
 
-This is where Poetry tracks what libraries your project depends on.
+Poetry will also lock the dependencies in a `poetry.lock` file to ensure consistency across environments.
 
----
+### 📍 Step 6: Create a Simple Python Script (`cart.py`)
 
-### 📍 Step 6: Create a Simple Real-life Python Script 
-
-\`\`\`bash
+```bash
 nano cart.py
-\`\`\`
+```
 
-Use `nano` (or any editor) to create a Python file.
+Paste the following code into the `cart.py` file:
 
-Paste the following code:
-
-\`\`\`python
+```python
 def calculate_total():
     cart = {
         "milk": 55,
@@ -136,25 +121,23 @@ def calculate_total():
 
 if __name__ == "__main__":
     calculate_total()
-\`\`\`
+```
 
-This is a small script that calculates a total bill using predefined values — great for basic understanding and testing the setup.
-
----
+This script calculates the total cost of grocery items and prints the bill in Indian Rupees (₹).
 
 ### 📍 Step 7: Run the Script Using Poetry (Running in Context)
 
-\`\`\`bash
+```bash
 poetry run python cart.py
-\`\`\`
-
-This runs your script **inside the virtual environment** managed by Poetry. This way, all dependencies used come from your isolated environment, not the system-wide Python.
+```
 
 Expected output:
 
-\`\`\`
+```bash
 Total grocery bill is: ₹170
-\`\`\`
+```
+
+Running the script with `poetry run` ensures it uses the isolated virtual environment rather than your system's Python.
 
 ---
 
@@ -162,4 +145,6 @@ Total grocery bill is: ₹170
 
 | Date       | Author        | Change Description         |
 |------------|---------------|----------------------------|
-| 15-Apr-25  | Prince Batra  | Initial draft |
+| 15-Apr-25  | Prince Batra  | Initial draft (local Maven SOP) |
+
+---
