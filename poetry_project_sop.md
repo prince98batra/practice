@@ -145,6 +145,6 @@ Running the script with `poetry run` ensures it uses the isolated virtual enviro
 
 | Date       | Author        | Change Description         |
 |------------|---------------|----------------------------|
-| 15-Apr-25  | Prince Batra  | Initial draft (local Maven SOP) |
+| 15-Apr-25  | Prince Batra  | Initial draft  |
 
 ---
