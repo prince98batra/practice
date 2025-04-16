@@ -15,9 +15,10 @@
 - [4. Cron Syntax Format](#4-cron-syntax-format)
 - [5. Creating, Viewing, Removing and Editing Cron Jobs](#5-creating-viewing-removing-and-editing-cron-jobs)
 - [6. Check System Cron Logs](#6-check-system-cron-logs)
-- [7. Example Cron Jobs for Common Use Cases](#7-example-cron-jobs-for-common-use-cases)
-- [8. Contact Information](#contact-information)
-- [9. References](#references)
+- [7. Example Cron Jobs for Common Use Cases](#7-example-cron-jobs-for-common-use-cases)3
+- [8. References](#8-references)
+- [9. Contact Information](#9-contact-information)
+
 
 
 ---
