@@ -12,7 +12,7 @@
 
 - [1. Purpose](#1-purpose)
 - [2. Prerequisites](#2-prerequisites)
-- [3. Introduction](#3-introduction)
+- [3. Introduction](#1-introduction)
 - [4. What is cron and crontab?](#4-what-is-cron-and-crontab)
 - [5. Cron Syntax Format](#5-cron-syntax-format)
 - [6. Creating, Viewing, Removing and Editing Cron Jobs](#6-creating-viewing-removing-and-editing-cron-jobs)
