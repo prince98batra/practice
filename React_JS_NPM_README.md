@@ -1,5 +1,5 @@
 
-# ⚛️ React JS | NPM Documentation
+# NPM Documentation
 
 <img src="https://github.com/npm/logos/blob/master/npm%20logo/npm-logo-red.png" alt="NPM Logo" width="200"/>
 
