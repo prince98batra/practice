@@ -10,16 +10,16 @@
 ## 📑 Table of Contents
 
 
-- [1. Purpose](#1-purpose)
-- [2. Prerequisites](#2-prerequisites)
+- [1. Purpose](purpose)
+- [2. Prerequisites](prerequisites)
 - [3. Introduction](#1-introduction)
-- [4. What is cron and crontab?](#4-what-is-cron-and-crontab)
-- [5. Cron Syntax Format](#5-cron-syntax-format)
-- [6. Creating, Viewing, Removing and Editing Cron Jobs](#6-creating-viewing-removing-and-editing-cron-jobs)
-- [7. Check System Cron Logs](#7-check-system-cron-logs)
-- [8. Example Cron Jobs for Common Use Cases](#8-example-cron-jobs-for-common-use-cases)
-- [9. Contact Information](#9-contact-information)
-- [10. References](#10-references)
+- [4. What is cron and crontab?](#2-what-is-cron-and-crontab)
+- [5. Cron Syntax Format](#3-cron-syntax-format)
+- [6. Creating, Viewing, Removing and Editing Cron Jobs](#4-creating-viewing-removing-and-editing-cron-jobs)
+- [7. Check System Cron Logs](#5-check-system-cron-logs)
+- [8. Example Cron Jobs for Common Use Cases](#6-example-cron-jobs-for-common-use-cases)
+- [9. Contact Information](contact-information)
+- [10. References](references)
 
 
 ---
