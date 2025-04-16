@@ -1,9 +1,9 @@
 # SOP: Managing Cron Jobs on Ubuntu
 
-**Owner:** Prince Batra  
-**Team:** Downtime Crew  
-**Date Created:** 14-Apr-2025  
-**Last Updated:** 14-Apr-2025  
+## 👤 **Author Information**
+| **Author** | **Created on** | **Version**  | **Comment** | **Reviewer** |
+|------------|----------------|--------------|-------------|--------------|
+| **Prince Batra**   | **14-04-2025**   | **Version 1** | **Internal review** | **Siddharth Pawar** |
 
 ---
 
@@ -14,7 +14,7 @@
 
 ---
 
-## 🎯 Purpose
+## 🎯 Purpose 
 
 This SOP outlines how to create, edit, and manage cron jobs on Ubuntu systems. It helps in automating tasks like backups, log rotation, and monitoring.
 
@@ -120,7 +120,8 @@ cat /home/ubuntu/hello_log.txt
 You should see something like:
 
 ```
-Hello from cron at Mon Apr 14 13:21:01 UTC 2025
+Hello from cron at Wed Apr 14 09:00:01 UTC 2025
+
 ```
 
 ## 5. Viewing Cron Jobs
@@ -180,6 +181,7 @@ Can Be Used For:
 
 #### Step 1: Open the system cron file:
 
+# This file affects all users, and it's useful for system-wide cron jobs.
 ```
 sudo nano /etc/crontab
 ```
@@ -303,8 +305,11 @@ Run log rotation every day at midnight:
 
 ---
 
-| Date       | Author        | Change Description         |
-|------------|---------------|----------------------------|
-| 14-Apr-25  | Prince Batra  | Initial draft              |
-
 **End of SOP**
+
+## 📬 **Contact Information**
+| **Name** | **Email Address**        |
+|----------|--------------------------|
+| **Prince Batra**  | **prince.batra.snaatak@mygurukulam.co**   |
+
+
