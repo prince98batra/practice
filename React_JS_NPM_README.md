@@ -14,15 +14,16 @@
 
 ## 📜 Table of Contents
 
-1. [Purpose of This Document](#1-purpose-of-this-document)
-2. [What is React JS?](#2-what-is-react-js)
-3. [Why Should You Use React?](#3-why-should-you-use-react)
-4. [Key Features of React JS](#4-key-features-of-react-js)
-5. [Advantages of React JS](#5-advantages-of-react-js)
-6. [Disadvantages of React JS](#6-disadvantages-of-react-js)
-7. [Best Practices for React JS](#7-best-practices-for-react-js)
-8. [Conclusion and Recommendations](#8-conclusion-and-recommendations)
-9. [Conclusion and Recommendations](#9-References)
+1. [📘 Purpose of This Document](#1-purpose-of-this-document)  
+2. [🛠️ What is NPM?](#2-what-is-npm)  
+3. [💡 Why Should You Use NPM?](#3-why-should-you-use-npm)  
+4. [⚙️ Key Features of NPM](#4-key-features-of-npm)  
+5. [🚀 Advantages of NPM](#5-advantages-of-npm)  
+6. [⚠️ Disadvantages of NPM](#6-disadvantages-of-npm)  
+7. [📋 Best Practices for NPM](#7-best-practices-for-npm)  
+8. [✅ Conclusion and Recommendations](#8-conclusion-and-recommendations)  
+9. [📚 References](#9-references)
+
 ---
 
 ## 📘 1. Purpose of This Document
