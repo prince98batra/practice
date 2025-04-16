@@ -294,19 +294,10 @@ Run log rotation every day at midnight:
 
 ## 8. References
 
-1. [Cron Jobs - Linux Documentation](https://man7.org/linux/man-pages/man5/crontab.5.html)  
+1. [Cron Jobs - Ask Ubuntu](https://askubuntu.com/questions/2368/how-do-i-set-up-a-cron-job)  
    - Official documentation about cron jobs and crontab file format.
 
-2. [How to Use Cron on Ubuntu](https://linuxize.com/post/scheduling-cron-jobs-in-linux/)  
-   - A tutorial explaining how to schedule cron jobs on Ubuntu and other Linux distributions.
-
-3. [Cron Syntax Explained](https://www.freecodecamp.org/news/an-intuitive-guide-to-cron-syntax/)  
-   - A detailed guide to understanding the cron syntax with examples.
-
-4. [System Log Files in Linux](https://www.tecmint.com/view-and-examine-linux-log-files/)  
-   - A guide for understanding and analyzing system logs, including cron logs.
-
-5. [Using Cron for Automation](https://www.digitalocean.com/community/tutorials/an-introduction-to-cron-jobs)  
+2. [Using Cron for Automation](https://www.digitalocean.com/community/tutorials/an-introduction-to-cron-jobs)  
    - A blog post from DigitalOcean explaining cron jobs and how they can be used for automation tasks.
 
 ---
