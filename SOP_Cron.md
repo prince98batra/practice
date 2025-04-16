@@ -45,7 +45,7 @@ If cron is already active, this command will simply ensure it's running without 
 sudo systemctl start cron
 ```
 
-# Enable cron on system boot 
+Enable cron on system boot 
 
 ```
 sudo systemctl enable cron
@@ -64,7 +64,6 @@ Learn how to write the correct cron job schedule format to run tasks at specific
 │ └──────── Hour (0 - 23)
 └────────── Minute (0 - 59)
 ```
-
 ---
 
 ## 4. Creating, Viewing, Removing and Editing Cron Jobs
