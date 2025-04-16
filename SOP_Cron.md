@@ -7,6 +7,18 @@
 
 ---
 
+## 📑 Table of Contents
+
+- [1. Introduction](#1-introduction)
+- [2. What is cron and crontab?](#2-what-is-cron-and-crontab)
+- [3. Cron Syntax Format](#3-cron-syntax-format)
+- [4. Creating, Viewing, Removing and Editing Cron Jobs](#4-creating-viewing-removing-and-editing-cron-jobs)
+- [5. Check System Cron Logs](#5-check-system-cron-logs)
+- [6. Example Cron Jobs for Common Use Cases](#6-example-cron-jobs-for-common-use-cases)
+- [📚 References](#-references)
+
+---
+
 ## 🎯 Purpose 
 
 This SOP outlines how to create, edit, and manage cron jobs on Ubuntu systems. It helps in automating tasks like backups, log rotation, and monitoring.
