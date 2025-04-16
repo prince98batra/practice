@@ -9,28 +9,25 @@
 
 ## 📑 Table of Contents
 
-
-- [1. Purpose](#purpose)
-- [2. Prerequisites](#prerequisites)
-- [3. Introduction](#1-introduction)
-- [4. What is cron and crontab?](#2-what-is-cron-and-crontab)
-- [5. Cron Syntax Format](#3-cron-syntax-format)
-- [6. Creating, Viewing, Removing and Editing Cron Jobs](#4-creating-viewing-removing-and-editing-cron-jobs)
-- [7. Check System Cron Logs](#5-check-system-cron-logs)
-- [8. Example Cron Jobs for Common Use Cases](#6-example-cron-jobs-for-common-use-cases)
-- [9. Contact Information](#contact-information)
-- [10. References](#references)
+- [1. Prerequisites](#prerequisites)
+- [2. Introduction](#1-introduction)
+- [3. What is cron and crontab?](#2-what-is-cron-and-crontab)
+- [4. Cron Syntax Format](#3-cron-syntax-format)
+- [5. Creating, Viewing, Removing and Editing Cron Jobs](#4-creating-viewing-removing-and-editing-cron-jobs)
+- [6. Check System Cron Logs](#5-check-system-cron-logs)
+- [7. Example Cron Jobs for Common Use Cases](#6-example-cron-jobs-for-common-use-cases)
+- [8. Contact Information](#contact-information)
+- [9. References](#references)
 
 
 ---
 
-## 🎯 Purpose 
-
-This SOP outlines how to create, edit, and manage cron jobs on Ubuntu systems. It helps in automating tasks like backups, log rotation, and monitoring.
+## 1. Introduction
+Cron is a time-based job scheduler in Unix-like operating systems. This SOP provides step-by-step instructions for creating, editing, managing, and troubleshooting cron jobs on Ubuntu systems.
 
 ---
 
-## 🛠 Prerequisites
+## 2. 🛠 Prerequisites
 
 - Ubuntu 22.04 or compatible Linux environment  
 - User access with `sudo` privileges  
@@ -38,10 +35,7 @@ This SOP outlines how to create, edit, and manage cron jobs on Ubuntu systems. I
 
 ---
 
-## 1. Introduction
-Cron is a time-based job scheduler in Unix-like operating systems. This SOP provides step-by-step instructions for creating, editing, managing, and troubleshooting cron jobs on Ubuntu systems.
-
-## 2. What is cron and crontab?
+## 3. What is cron and crontab?
 
 🎯 Objective / Use Case:  
 Cron is a time-based job scheduler in Unix-like operating systems like Ubuntu. It lets users schedule tasks (called cron jobs) to run automatically at specified times or intervals.
@@ -68,7 +62,7 @@ sudo systemctl start cron
 sudo systemctl enable cron
 ```
 
-## 3. Cron Syntax Format
+## 4. Cron Syntax Format
 
 Learn how to write the correct cron job schedule format to run tasks at specific times — like hourly, daily, or on specific weekdays.
 
@@ -83,7 +77,7 @@ Learn how to write the correct cron job schedule format to run tasks at specific
 ```
 ---
 
-## 4. Creating, Viewing, Removing and Editing Cron Jobs
+## 5. Creating, Viewing, Removing and Editing Cron Jobs
 
 Open the cron table (crontab) of the current user in edit mode, so you can create, modify, or delete scheduled tasks (cron jobs).
 
@@ -173,7 +167,7 @@ crontab -e
 Modify the scheduled jobs (e.g., change the time or script) in the crontab file.  
 Save and exit after making the changes.
 
-## 5. Check System Cron Logs
+## 6. Check System Cron Logs
 
 ```
 grep CRON /var/log/syslog
@@ -280,7 +274,7 @@ sudo chmod +x /etc/cron.monthly/hello.sh
 
 The script will now run automatically once a month.
 
-## 6. Example Cron Jobs for Common Use Cases
+## 7. Example Cron Jobs for Common Use Cases
 
 **Running System Updates**
 Run system updates every day at 5 AM:
