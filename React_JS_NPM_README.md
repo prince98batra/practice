@@ -1,15 +1,16 @@
 
 # ⚛️ React JS | NPM Documentation
 
-**Created:** 16-04-2025  
-**Version:** V1  
-**Author:** Prince Batra  
-
----
-
 ![React Logo](https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg)
 
 ---
+
+## 👤 **Author Information**
+| **Author** | **Created on** | **Version**  | **Comment** | **Reviewer** |
+|------------|----------------|--------------|-------------|--------------|
+| **Prince Batra**   | **16-04-2025**   | **Version 1** | **Internal review** | **Siddharth Pawar** |
+
+ ---
 
 ## ✅ What is React JS?
 
@@ -97,6 +98,14 @@ NPM is your toolbox that gives you all the extra tools you need to build better 
 If you’re starting out, React is one of the best places to begin your journey into frontend development.
 
 ---
+
+---
+
+## 📬 **Contact Information**
+| **Name** | **Email Address**        |
+|----------|--------------------------|
+| **Prince Batra**  | **prince.batra.snaatak@mygurukulam.co**   |
+
 
 ## 📘 Helpful Links
 
