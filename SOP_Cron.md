@@ -32,20 +32,20 @@ Cron is a time-based job scheduler in Unix-like operating systems like Ubuntu. I
 📌 Example Use Case:  
 Automatically run a backup script every night at midnight to save important files or logs for future use.
 
-Check cron status
+**Check cron status**
 
 ```
 sudo systemctl status cron
 ```
 
-Start cron (if inactive)
+**Start cron (if inactive)**
 If cron is already active, this command will simply ensure it's running without restarting it unnecessarily.
 
 ```
 sudo systemctl start cron
 ```
 
-Enable cron on system boot 
+**Enable cron on system boot**
 
 ```
 sudo systemctl enable cron
@@ -74,9 +74,9 @@ Open the cron table (crontab) of the current user in edit mode, so you can creat
 crontab -e
 ```
 
-### 4.1 Example to Create a Cron job
+**4.1 Example to Create a Cron job**
 
-#### Step 1: Create a Script
+**Step 1: Create a Script**
 
 ```
 nano /home/ubuntu/hello.sh
@@ -92,7 +92,7 @@ Then make it executable:
 chmod +x /home/ubuntu/hello.sh
 ```
 
-#### Step 2: Schedule It in Cron
+**Step 2: Schedule It in Cron**
 ```
 crontab -e
 ```
@@ -104,7 +104,7 @@ Add your cron job in the file:
 
 This will run the hello.sh script every day at 9:00 AM.
 
-#### Step 3: Verify It’s Working
+**Step 3: Verify It’s Working**
 ```
 cat /home/ubuntu/hello_log.txt
 ```
@@ -116,7 +116,7 @@ Hello from cron at Wed Apr 14 09:00:01 UTC 2025
 
 ```
 
-## 4.2. Viewing Cron Jobs
+**Viewing Cron Jobs**
 
 For Current User
 List your scheduled jobs:
@@ -131,7 +131,7 @@ For Another User (as root)
 crontab -u username -l
 ```
 
-## 4.3. Removing Cron Jobs
+**Removing Cron Jobs**
 
 Remove All Cron Jobs without confirmation
 
@@ -145,7 +145,7 @@ Remove All Cron Jobs with confirmation:
 crontab -i -r
 ```
 
-## 4.4. To edit your existing cron jobs
+**To edit your existing cron jobs**
 
 Open the crontab:
 
@@ -164,71 +164,71 @@ grep CRON /var/log/syslog
 
 This command will show logs for cron job executions, both user-specific and system-wide jobs.
 
-### System-wide Cron File 
+**System-wide Cron File**
 **Location:** `/etc/crontab`  
 
 Can Be Used For: Running scripts as any user with specific permissions for system-wide tasks.
 
-#### Step 1: Open the system cron file:
+**Step 1: Open the system cron file:**
 
 ```
 sudo nano /etc/crontab
 ```
-#### Step 2: Add the following line at the bottom:
+**Step 2: Add the following line at the bottom:**
 ```
 0 2 * * * root /home/ubuntu/hello.sh
 ```
 This runs the script daily at 2:00 AM as the root user
 
-### Custom Cron Files Directory:
+**Custom Cron Files Directory:**
 **Location:** `/etc/cron.d/`  
 
 This allows you to store cron jobs in separate files and specify the user for each job.
 
 Can Be Used For: Storing cron jobs for different users, making management easier without modifying the main cron file.
 
-#### Step 1: Create a new file in /etc/cron.d/ for user1. 
+**Step 1: Create a new file in /etc/cron.d/ for user1.**
 Let’s name it user1_hello_cron
 ```
 sudo nano /etc/cron.d/user1_hello_cron
 ```
 
-#### Step 2: Add the following line to run hello.sh:
+**Step 2: Add the following line to run hello.sh:**
 ```
 0 2 * * * user1 /home/ubuntu/hello.sh
 ```
 This runs the script daily at 2:00 AM as the user1
 
-#### Step 3: Create a new file in /etc/cron.d/ for user2. 
+**Step 3: Create a new file in /etc/cron.d/ for user2.** 
 Let’s name it user2_hello_cron
 ```
 sudo nano /etc/cron.d/user2_hello_cron
 ```
 
-#### Step 4: Add the following line to run hello.sh:
+**Step 4: Add the following line to run hello.sh:**
 ```
 0 2 * * * user2 /home/ubuntu/hello.sh
 ```
 This runs the script daily at 2:00 AM as the user2
 
-### Directory for Hourly Cron Jobs
+**Directory for Hourly Cron Jobs**
 **Location:** `/etc/cron.hourly/`  
 
 **Use Case:** Running scripts every hour for frequent tasks like monitoring or cleanup.
 
-#### Step 1: Copy your hello.sh script to the /etc/cron.hourly/ directory: 
+**Step 1: Copy your hello.sh script to the /etc/cron.hourly/ directory:** 
 ```
 sudo cp /home/ubuntu/hello.sh /etc/cron.hourly/
 sudo chmod +x /etc/cron.hourly/hello.sh
 ```
 The script will now run automatically every hour, as /etc/cron.hourly/ is for hourly tasks.
 
-### Directory for Daily Cron Jobs
+**Directory for Daily Cron Jobs**
 **Location:** `/etc/cron.daily/`  
 
 **Use Case:** Running scripts once a day for maintenance tasks like backups.
 
-#### Step : Copy your hello.sh script to the /etc/cron.daily/ directory: 
+**Step : Copy your hello.sh script to the /etc/cron.daily/ directory:**
 
 ```
 sudo cp /home/ubuntu/hello.sh /etc/cron.daily/
@@ -236,12 +236,12 @@ sudo chmod +x /etc/cron.daily/hello.sh
 ```
 The script will now run automatically once a day, as /etc/cron.daily/ is for daily tasks.
 
-### Directory for Weekly Cron Jobs
+**Directory for Weekly Cron Jobs**
 **Location:** `/etc/cron.weekly/`
 
 **Use Case:** Running scripts weekly for tasks like audits or reports.
 
-#### Step : Copy your hello.sh script to the /etc/cron.weekly/ directory:
+**Step : Copy your hello.sh script to the /etc/cron.weekly/ directory:**
 
 ```
 sudo cp /home/ubuntu/hello.sh /etc/cron.weekly/
@@ -249,12 +249,12 @@ sudo chmod +x /etc/cron.weekly/hello.sh
 ```
 The script will now run automatically once a week.
 
-### Directory for Monthly Cron Jobs
+**Directory for Monthly Cron Jobs**
 **Location:** `/etc/cron.monthly/`
 
 Use Case:Running scripts monthly for tasks like archiving or reporting.
 
-#### Step : Copy your hello.sh script to the /etc/cron.monthly/ directory:
+**Step : Copy your hello.sh script to the /etc/cron.monthly/ directory:**
 
 ```
 sudo cp /home/ubuntu/hello.sh /etc/cron.monthly/
@@ -265,14 +265,14 @@ The script will now run automatically once a month.
 
 ## 6. Example Cron Jobs for Common Use Cases
 
-## 6.1 Running System Updates
+**Running System Updates**
 Run system updates every day at 5 AM:
 
 ```
 0 5 * * * root apt update && apt upgrade -y.
 ```
 
-## 6.2 Running System Updates
+**Running System Updates**
 Run log rotation every day at midnight:
 
 ```
