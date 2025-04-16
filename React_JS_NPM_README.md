@@ -1,7 +1,7 @@
 
 # ⚛️ React JS | NPM Documentation
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React Logo" width="100"/>
+<img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React Logo" width="200"/>
 
 ---
 
