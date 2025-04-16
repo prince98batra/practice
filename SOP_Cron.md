@@ -32,20 +32,20 @@ Cron is a time-based job scheduler in Unix-like operating systems like Ubuntu. I
 📌 Example Use Case:  
 Automatically run a backup script every night at midnight to save important files or logs for future use.
 
-### 2.1 Check cron status
+### Check cron status
 
 ```
 sudo systemctl status cron
 ```
 
-### 2.2 Start cron (if inactive)
+### Start cron (if inactive)
 If cron is already active, this command will simply ensure it's running without restarting it unnecessarily.
 
 ```
 sudo systemctl start cron
 ```
 
-### 2.3 Enable cron on system boot 
+### Enable cron on system boot 
 
 ```
 sudo systemctl enable cron
