@@ -7,13 +7,6 @@
 
 ---
 
-## 📦 Stack Details
-
-**Component:** Cron Scheduler  
-**OS/Platform:** Ubuntu 22.04 LTS    
-
----
-
 ## 🎯 Purpose 
 
 This SOP outlines how to create, edit, and manage cron jobs on Ubuntu systems. It helps in automating tasks like backups, log rotation, and monitoring.
