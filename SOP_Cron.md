@@ -179,7 +179,6 @@ Can Be Used For: Running scripts as any user with specific permissions for syste
 
 #### Step 1: Open the system cron file:
 
-# This file affects all users, and it's useful for system-wide cron jobs.
 ```
 sudo nano /etc/crontab
 ```
