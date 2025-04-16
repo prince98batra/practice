@@ -27,7 +27,7 @@ Cron is a time-based job scheduler in Unix-like operating systems. This SOP prov
 
 ---
 
-## 2. 🛠 Prerequisites
+## 2. Prerequisites
 
 - Ubuntu 22.04 or compatible Linux environment  
 - User access with `sudo` privileges  
