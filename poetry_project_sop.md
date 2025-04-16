@@ -90,7 +90,7 @@ This step sets up a virtual environment isolated from your global Python environ
 poetry add requests pandas flask
 ```
 
-This command will add requests, pandas, and flask to your project. The dependencies will appear in the pyproject.toml file under the [tool.poetry.dependencies] section:`:
+This command will add requests, pandas, and flask to your project. The dependencies will appear in the pyproject.toml file under the [tool.poetry.dependencies] section:
 
 ```toml
 [tool.poetry.dependencies]
@@ -99,7 +99,7 @@ pandas = "^2.2.1"
 flask = "^2.3.0"
 ```
 
-Poetry will also lock the dependencies in a `poetry.lock` file to ensure consistency across environments.
+Poetry will also create or update the poetry.lock file to ensure the same package versions are used everywhere.
 
 ### 📍 Step 6: Create a Simple Python Script (`cart.py`)
 
