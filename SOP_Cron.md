@@ -74,7 +74,7 @@ Open the cron table (crontab) of the current user in edit mode, so you can creat
 crontab -e
 ```
 
-**4.1 Example to Create a Cron job**
+**Example to Create a Cron job**
 
 **Step 1: Create a Script**
 
