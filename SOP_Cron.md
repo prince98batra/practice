@@ -118,14 +118,14 @@ Hello from cron at Wed Apr 14 09:00:01 UTC 2025
 
 ## 4.2. Viewing Cron Jobs
 
-### For Current User
+For Current User
 List your scheduled jobs:
 
 ```
 crontab -l
 ```
 
-### For Another User (as root)
+For Another User (as root)
 
 ```
 crontab -u username -l
@@ -133,13 +133,13 @@ crontab -u username -l
 
 ## 4.3. Removing Cron Jobs
 
-### Remove All Cron Jobs without confirmation
+Remove All Cron Jobs without confirmation
 
 ```
 crontab -r
 ```
 
-### Remove All Cron Jobs with confirmation:
+Remove All Cron Jobs with confirmation:
 
 ```
 crontab -i -r
