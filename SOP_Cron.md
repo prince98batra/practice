@@ -192,6 +192,8 @@ sudo nano /etc/crontab
 ```
 This runs the script daily at 2:00 AM as the root user
 
+---
+
 **Custom Cron Files Directory:**
 **Location:** `/etc/cron.d/`  
 
@@ -223,6 +225,8 @@ sudo nano /etc/cron.d/user2_hello_cron
 ```
 This runs the script daily at 2:00 AM as the user2
 
+---
+
 **Directory for Hourly Cron Jobs**
 **Location:** `/etc/cron.hourly/`  
 
@@ -234,6 +238,8 @@ sudo cp /home/ubuntu/hello.sh /etc/cron.hourly/
 sudo chmod +x /etc/cron.hourly/hello.sh
 ```
 The script will now run automatically every hour, as /etc/cron.hourly/ is for hourly tasks.
+
+---
 
 **Directory for Daily Cron Jobs**
 **Location:** `/etc/cron.daily/`  
@@ -248,6 +254,8 @@ sudo chmod +x /etc/cron.daily/hello.sh
 ```
 The script will now run automatically once a day, as /etc/cron.daily/ is for daily tasks.
 
+---
+
 **Directory for Weekly Cron Jobs**
 **Location:** `/etc/cron.weekly/`
 
@@ -260,6 +268,8 @@ sudo cp /home/ubuntu/hello.sh /etc/cron.weekly/
 sudo chmod +x /etc/cron.weekly/hello.sh
 ```
 The script will now run automatically once a week.
+
+---
 
 **Directory for Monthly Cron Jobs**
 **Location:** `/etc/cron.monthly/`
@@ -297,7 +307,7 @@ Run log rotation every day at midnight:
 1. [Cron Jobs - Ask Ubuntu](https://askubuntu.com/questions/2368/how-do-i-set-up-a-cron-job)  
    - Official documentation about cron jobs and crontab file format.
 
-2. [Using Cron for Automation](https://www.digitalocean.com/community/tutorials/an-introduction-to-cron-jobs)  
+2. [Using Cron for Automation](https://www.digitalocean.com/community/tutorials/how-to-use-cron-to-automate-tasks-ubuntu-1804))  
    - A blog post from DigitalOcean explaining cron jobs and how they can be used for automation tasks.
 
 ---
