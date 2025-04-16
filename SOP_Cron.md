@@ -292,7 +292,7 @@ Run log rotation every day at midnight:
 ```
 ---
 
-## References
+## 8. References
 
 1. [Cron Jobs - Linux Documentation](https://man7.org/linux/man-pages/man5/crontab.5.html)  
    - Official documentation about cron jobs and crontab file format.
