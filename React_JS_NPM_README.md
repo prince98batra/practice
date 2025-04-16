@@ -1,7 +1,7 @@
 
 # ⚛️ React JS | NPM Documentation
 
-<img src="[https://upload.wikimedia.org/wikipedia/commons/6/64/Npm-logo.svg](https://github.com/npm/logos/blob/master/npm%20logo/npm-logo-red.png)" alt="NPM Logo" width="200"/>
+<img src="https://github.com/npm/logos/blob/master/npm%20logo/npm-logo-red.png" alt="NPM Logo" width="200"/>
 
 ---
 
