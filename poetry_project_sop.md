@@ -90,7 +90,7 @@ This step sets up a virtual environment isolated from your global Python environ
 poetry add requests pandas flask
 ```
 
-You can confirm the added dependencies in the `pyproject.toml`:
+This command will add requests, pandas, and flask to your project. The dependencies will appear in the pyproject.toml file under the [tool.poetry.dependencies] section:`:
 
 ```toml
 [tool.poetry.dependencies]
