@@ -16,6 +16,7 @@
   - [5. Creating, Viewing, Removing and Editing Cron Jobs](#5-creating-viewing-removing-and-editing-cron-jobs)
   - [6. Check System Cron Logs](#6-check-system-cron-logs)
   - [7. System & Directory-Based Cron Jobs](#7-system--directory-based-cron-jobs)
+  - [8. Example Cron Jobs for Common Use Cases](#8-example-cron-jobs-for-common-use-cases)
   - [9. References](#9-references)
   - [10. Contact Information](#-contact-information)
 
