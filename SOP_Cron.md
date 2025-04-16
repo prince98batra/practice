@@ -31,7 +31,7 @@ This SOP outlines how to create, edit, and manage cron jobs on Ubuntu systems. I
 ## 1. Introduction
 Cron is a time-based job scheduler in Unix-like operating systems. This SOP provides step-by-step instructions for creating, editing, managing, and troubleshooting cron jobs on Ubuntu systems.
 
-## 1.1. What is cron and crontab?
+## 2. What is cron and crontab?
 
 🎯 Objective / Use Case:  
 Cron is a time-based job scheduler in Unix-like operating systems like Ubuntu. It lets users schedule tasks (called cron jobs) to run automatically at specified times or intervals.
@@ -39,7 +39,7 @@ Cron is a time-based job scheduler in Unix-like operating systems like Ubuntu. I
 📌 Example Use Case:  
 Automatically run a backup script every night at midnight to save important files or logs for future use.
 
-### 1.2. Check cron status
+### 2.1 Check cron status
 
 ```
 sudo systemctl status cron
@@ -74,7 +74,7 @@ Learn how to write the correct cron job schedule format to run tasks at specific
 
 ---
 
-## 4. Creating and Editing Cron Jobs
+## 4. Creating, Viewing, Removing and Editing Cron Jobs
 
 Open the cron table (crontab) of the current user in edit mode, so you can create, modify, or delete scheduled tasks (cron jobs).
 
@@ -82,7 +82,7 @@ Open the cron table (crontab) of the current user in edit mode, so you can creat
 crontab -e
 ```
 
-### 4.1 Example
+### 4.1 Example to Create a Cron job
 
 #### Step 1: Create a Script
 
@@ -124,36 +124,36 @@ Hello from cron at Wed Apr 14 09:00:01 UTC 2025
 
 ```
 
-## 5. Viewing Cron Jobs
+## 4.2. Viewing Cron Jobs
 
-### 5.1 For Current User
+### For Current User
 List your scheduled jobs:
 
 ```
 crontab -l
 ```
 
-### 5.2 For Another User (as root)
+### For Another User (as root)
 
 ```
 crontab -u username -l
 ```
 
-## 6. Removing Cron Jobs
+## 4.3. Removing Cron Jobs
 
-### 6.1 Remove All Cron Jobs without confirmation
+### Remove All Cron Jobs without confirmation
 
 ```
 crontab -r
 ```
 
-### 6.2 Remove All Cron Jobs with confirmation:
+### Remove All Cron Jobs with confirmation:
 
 ```
 crontab -i -r
 ```
 
-## 7. To edit your existing cron jobs
+## 4.4. To edit your existing cron jobs
 
 Open the crontab:
 
@@ -164,7 +164,7 @@ crontab -e
 Modify the scheduled jobs (e.g., change the time or script) in the crontab file.  
 Save and exit after making the changes.
 
-## 8. Check System Cron Logs
+## 5. Check System Cron Logs
 
 ```
 grep CRON /var/log/syslog
@@ -172,7 +172,7 @@ grep CRON /var/log/syslog
 
 This command will show logs for cron job executions, both user-specific and system-wide jobs.
 
-### 8.1 System-wide Cron File 
+### System-wide Cron File 
 **Location:** `/etc/crontab`  
 
 Can Be Used For: Running scripts as any user with specific permissions for system-wide tasks.
@@ -188,7 +188,7 @@ sudo nano /etc/crontab
 ```
 This runs the script daily at 2:00 AM as the root user
 
-### 8.2 Custom Cron Files Directory:
+### Custom Cron Files Directory:
 **Location:** `/etc/cron.d/`  
 
 This allows you to store cron jobs in separate files and specify the user for each job.
@@ -219,7 +219,7 @@ sudo nano /etc/cron.d/user2_hello_cron
 ```
 This runs the script daily at 2:00 AM as the user2
 
-### 8.3 Directory for Hourly Cron Jobs
+### Directory for Hourly Cron Jobs
 **Location:** `/etc/cron.hourly/`  
 
 **Use Case:** Running scripts every hour for frequent tasks like monitoring or cleanup.
@@ -231,7 +231,7 @@ sudo chmod +x /etc/cron.hourly/hello.sh
 ```
 The script will now run automatically every hour, as /etc/cron.hourly/ is for hourly tasks.
 
-### 8.4 Directory for Daily Cron Jobs
+### Directory for Daily Cron Jobs
 **Location:** `/etc/cron.daily/`  
 
 **Use Case:** Running scripts once a day for maintenance tasks like backups.
@@ -244,7 +244,7 @@ sudo chmod +x /etc/cron.daily/hello.sh
 ```
 The script will now run automatically once a day, as /etc/cron.daily/ is for daily tasks.
 
-### 8.5 Directory for Weekly Cron Jobs
+### Directory for Weekly Cron Jobs
 **Location:** `/etc/cron.weekly/`
 
 **Use Case:** Running scripts weekly for tasks like audits or reports.
@@ -257,7 +257,7 @@ sudo chmod +x /etc/cron.weekly/hello.sh
 ```
 The script will now run automatically once a week.
 
-### 8.6 Directory for Monthly Cron Jobs
+### Directory for Monthly Cron Jobs
 **Location:** `/etc/cron.monthly/`
 
 Use Case:Running scripts monthly for tasks like archiving or reporting.
@@ -271,16 +271,16 @@ sudo chmod +x /etc/cron.monthly/hello.sh
 
 The script will now run automatically once a month.
 
-## 9. Example Cron Jobs for Common Use Cases
+## 6. Example Cron Jobs for Common Use Cases
 
-## 9.1 Running System Updates
+## 6.1 Running System Updates
 Run system updates every day at 5 AM:
 
 ```
 0 5 * * * root apt update && apt upgrade -y.
 ```
 
-## 9.2 Running System Updates
+## 6.2 Running System Updates
 Run log rotation every day at midnight:
 
 ```
