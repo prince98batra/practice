@@ -15,7 +15,7 @@
   - [4. Cron Syntax Format](#4-cron-syntax-format)
   - [5. Creating, Viewing, Removing and Editing Cron Jobs](#5-creating-viewing-removing-and-editing-cron-jobs)
   - [6. Check System Cron Logs](#6-check-system-cron-logs)
-  - [8. System & Directory-Based Cron Jobs](#8-system--directory-based-cron-jobs)
+  - [7. System & Directory-Based Cron Jobs](#7-system--directory-based-cron-jobs)
   - [9. References](#9-references)
   - [10. Contact Information](#-contact-information)
 
