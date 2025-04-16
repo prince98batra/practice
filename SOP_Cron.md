@@ -292,11 +292,9 @@ Run log rotation every day at midnight:
 
 ---
 
-**End of SOP**
-
-## 📬 **Contact Information**
+##📬 **8. Contact Information**
 | **Name** | **Email Address**        |
 |----------|--------------------------|
 | **Prince Batra**  | **prince.batra.snaatak@mygurukulam.co**   |
 
-
+**End of SOP**
