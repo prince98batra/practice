@@ -175,9 +175,7 @@ This command will show logs for cron job executions, both user-specific and syst
 ### 8.1 System-wide Cron File 
 **Location:** `/etc/crontab`  
 
-Can Be Used For:
-✅ Running scripts as any specific user (e.g., root, ubuntu, etc.) — not just the current one.
-✅ Helpful when you want a task to run with specific permissions.
+Can Be Used For: Running scripts as any user with specific permissions for system-wide tasks.
 
 #### Step 1: Open the system cron file:
 
@@ -185,7 +183,6 @@ Can Be Used For:
 ```
 sudo nano /etc/crontab
 ```
-
 #### Step 2: Add the following line at the bottom:
 ```
 0 2 * * * root /home/ubuntu/hello.sh
@@ -197,8 +194,7 @@ This runs the script daily at 2:00 AM as the root user
 
 This allows you to store cron jobs in separate files and specify the user for each job.
 
-Can Be Used For:
-The /etc/cron.d/ directory allows you to add custom cron job files that run as specific users. This is useful when you want to assign tasks to different users, or when you need to organize cron jobs for different services, without editing the main cron file `(/etc/crontab)`.
+Can Be Used For: Storing cron jobs for different users, making management easier without modifying the main cron file.
 
 #### Step 1: Create a new file in /etc/cron.d/ for user1. 
 Let’s name it user1_hello_cron
@@ -227,24 +223,19 @@ This runs the script daily at 2:00 AM as the user2
 ### 8.3 Directory for Hourly Cron Jobs
 **Location:** `/etc/cron.hourly/`  
 
-The /etc/cron.hourly/ directory is for scripts that need to run every hour. Any executable script placed in this directory will automatically run hourly.
-
-**Use Case:** For scripts that perform frequent checks or cleanups.
+**Use Case:** Running scripts every hour for frequent tasks like monitoring or cleanup.
 
 #### Step 1: Copy your hello.sh script to the /etc/cron.hourly/ directory: 
 ```
 sudo cp /home/ubuntu/hello.sh /etc/cron.hourly/
 sudo chmod +x /etc/cron.hourly/hello.sh
 ```
-
 The script will now run automatically every hour, as /etc/cron.hourly/ is for hourly tasks.
 
 ### 8.4 Directory for Daily Cron Jobs
 **Location:** `/etc/cron.daily/`  
 
-The /etc/cron.daily/ directory is for scripts that need to run once a day. Any executable script placed in this directory will automatically run daily at a time set by the system (usually at 6 AM).
-
-**Use Case:** For simple maintenance scripts that should run daily.
+**Use Case:** Running scripts once a day for maintenance tasks like backups.
 
 #### Step : Copy your hello.sh script to the /etc/cron.daily/ directory: 
 
@@ -252,15 +243,12 @@ The /etc/cron.daily/ directory is for scripts that need to run once a day. Any e
 sudo cp /home/ubuntu/hello.sh /etc/cron.daily/
 sudo chmod +x /etc/cron.daily/hello.sh
 ```
-
 The script will now run automatically once a day, as /etc/cron.daily/ is for daily tasks.
 
 ### 8.5 Directory for Weekly Cron Jobs
 **Location:** `/etc/cron.weekly/`
 
-The /etc/cron.weekly/ directory is for scripts that need to run once a week. Any executable script placed in this directory will automatically run weekly.
-
-**Use Case:** For tasks that need to run once a week, like backups or log rotations.
+**Use Case:** Running scripts weekly for tasks like audits or reports.
 
 #### Step : Copy your hello.sh script to the /etc/cron.weekly/ directory:
 
@@ -268,15 +256,12 @@ The /etc/cron.weekly/ directory is for scripts that need to run once a week. Any
 sudo cp /home/ubuntu/hello.sh /etc/cron.weekly/
 sudo chmod +x /etc/cron.weekly/hello.sh
 ```
-
 The script will now run automatically once a week.
 
 ### 8.6 Directory for Monthly Cron Jobs
 **Location:** `/etc/cron.monthly/`
 
-The /etc/cron.monthly/ directory is for scripts that need to run once a month. Any executable script placed in this directory will automatically run monthly.
-
-Use Case: For tasks that need to run once a month, such as monthly cleanup or reporting.
+Use Case:Running scripts monthly for tasks like archiving or reporting.
 
 #### Step : Copy your hello.sh script to the /etc/cron.monthly/ directory:
 
