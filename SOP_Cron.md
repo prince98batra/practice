@@ -289,10 +289,28 @@ Run log rotation every day at midnight:
 ```
 0 0 * * * root /usr/sbin/logrotate /etc/logrotate.conf
 ```
+---
+
+## References
+
+1. [Cron Jobs - Linux Documentation](https://man7.org/linux/man-pages/man5/crontab.5.html)  
+   - Official documentation about cron jobs and crontab file format.
+
+2. [How to Use Cron on Ubuntu](https://linuxize.com/post/scheduling-cron-jobs-in-linux/)  
+   - A tutorial explaining how to schedule cron jobs on Ubuntu and other Linux distributions.
+
+3. [Cron Syntax Explained](https://www.freecodecamp.org/news/an-intuitive-guide-to-cron-syntax/)  
+   - A detailed guide to understanding the cron syntax with examples.
+
+4. [System Log Files in Linux](https://www.tecmint.com/view-and-examine-linux-log-files/)  
+   - A guide for understanding and analyzing system logs, including cron logs.
+
+5. [Using Cron for Automation](https://www.digitalocean.com/community/tutorials/an-introduction-to-cron-jobs)  
+   - A blog post from DigitalOcean explaining cron jobs and how they can be used for automation tasks.
 
 ---
 
-##📬 **8. Contact Information**
+## **9. Contact Information**
 | **Name** | **Email Address**        |
 |----------|--------------------------|
 | **Prince Batra**  | **prince.batra.snaatak@mygurukulam.co**   |
