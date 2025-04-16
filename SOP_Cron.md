@@ -9,15 +9,15 @@
 
 ## 📑 Table of Contents
 
-- [1. Introduction](#1-introduction)
-- [2. Prerequisites](#2-prerequisites)
-- [3. What is cron and crontab?](#3-what-is-cron-and-crontab)
-- [4. Cron Syntax Format](#4-cron-syntax-format)
-- [5. Creating, Viewing, Removing and Editing Cron Jobs](#5-creating-viewing-removing-and-editing-cron-jobs)
-- [6. Check System Cron Logs](#6-check-system-cron-logs)
-- [7. Example Cron Jobs for Common Use Cases](#7-example-cron-jobs-for-common-use-cases)3
-- [8. References](#8-references)
-- [9. Contact Information](#9-contact-information)
+  - [1. Introduction](#1-introduction)
+  - [2. Prerequisites](#2-prerequisites)
+  - [3. What is cron and crontab?](#3-what-is-cron-and-crontab)
+  - [4. Cron Syntax Format](#4-cron-syntax-format)
+  - [5. Creating, Viewing, Removing and Editing Cron Jobs](#5-creating-viewing-removing-and-editing-cron-jobs)
+  - [6. Check System Cron Logs](#6-check-system-cron-logs)
+  - [8. System & Directory-Based Cron Jobs](#8-system--directory-based-cron-jobs)
+  - [9. References](#9-references)
+  - [10. Contact Information](#-contact-information)
 
 
 
@@ -176,6 +176,9 @@ grep CRON /var/log/syslog
 
 This command will show logs for cron job executions, both user-specific and system-wide jobs.
 
+
+## 7. System & Directory-Based Cron Jobs
+
 **System-wide Cron File**
 **Location:** `/etc/crontab`  
 
@@ -227,65 +230,37 @@ This runs the script daily at 2:00 AM as the user2
 
 ---
 
-**Directory for Hourly Cron Jobs**
-**Location:** `/etc/cron.hourly/`  
+**🗓️ Time-Based Cron Directories**
 
-**Use Case:** Running scripts every hour for frequent tasks like monitoring or cleanup.
+Want your script to run automatically every hour, day, week, or month? Just copy it to the right directory and make it executable:
 
-**Step 1: Copy your hello.sh script to the /etc/cron.hourly/ directory:** 
-```
-sudo cp /home/ubuntu/hello.sh /etc/cron.hourly/
+```bash
+# Hourly
+sudo cp hello.sh /etc/cron.hourly/
 sudo chmod +x /etc/cron.hourly/hello.sh
 ```
-The script will now run automatically every hour, as /etc/cron.hourly/ is for hourly tasks.
 
----
-
-**Directory for Daily Cron Jobs**
-**Location:** `/etc/cron.daily/`  
-
-**Use Case:** Running scripts once a day for maintenance tasks like backups.
-
-**Step : Copy your hello.sh script to the /etc/cron.daily/ directory:**
-
-```
-sudo cp /home/ubuntu/hello.sh /etc/cron.daily/
+```bash
+# Daily
+sudo cp hello.sh /etc/cron.daily/
 sudo chmod +x /etc/cron.daily/hello.sh
 ```
-The script will now run automatically once a day, as /etc/cron.daily/ is for daily tasks.
 
----
-
-**Directory for Weekly Cron Jobs**
-**Location:** `/etc/cron.weekly/`
-
-**Use Case:** Running scripts weekly for tasks like audits or reports.
-
-**Step : Copy your hello.sh script to the /etc/cron.weekly/ directory:**
-
-```
-sudo cp /home/ubuntu/hello.sh /etc/cron.weekly/
+```bash
+# Weekly
+sudo cp hello.sh /etc/cron.weekly/
 sudo chmod +x /etc/cron.weekly/hello.sh
 ```
-The script will now run automatically once a week.
 
----
-
-**Directory for Monthly Cron Jobs**
-**Location:** `/etc/cron.monthly/`
-
-Use Case:Running scripts monthly for tasks like archiving or reporting.
-
-**Step : Copy your hello.sh script to the /etc/cron.monthly/ directory:**
-
-```
-sudo cp /home/ubuntu/hello.sh /etc/cron.monthly/
+```bash
+# Monthly
+sudo cp hello.sh /etc/cron.monthly/
 sudo chmod +x /etc/cron.monthly/hello.sh
 ```
 
-The script will now run automatically once a month.
+✅ Just change the directory path based on how often you want it to run. The system takes care of the schedule automatically.
 
-## 7. Example Cron Jobs for Common Use Cases
+## 8. Example Cron Jobs for Common Use Cases
 
 **Running System Updates**
 Run system updates every day at 5 AM:
@@ -302,7 +277,7 @@ Run log rotation every day at midnight:
 ```
 ---
 
-## 8. References
+## 9. References
 
 1. [Cron Jobs - Ask Ubuntu](https://askubuntu.com/questions/2368/how-do-i-set-up-a-cron-job)  
    - Official documentation about cron jobs and crontab file format.
@@ -312,9 +287,8 @@ Run log rotation every day at midnight:
 
 ---
 
-## **9. Contact Information**
+## **Contact Information**
 | **Name** | **Email Address**        |
 |----------|--------------------------|
 | **Prince Batra**  | **prince.batra.snaatak@mygurukulam.co**   |
 
-**End of SOP**
