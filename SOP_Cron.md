@@ -1,6 +1,6 @@
-# SOP: Managing Cron Jobs on Ubuntu
-
 <img src="https://miro.medium.com/v2/resize:fit:670/1*ukNvgqV-HTHTebPHZMFNgg.png" width="500" height="auto" />
+
+# SOP: Managing Cron Jobs on Ubuntu
 
 ## 👤 **Author Information**
 | **Author** | **Created on** | **Version**  | **Comment** | **Reviewer** |
