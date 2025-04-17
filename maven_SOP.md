@@ -33,15 +33,15 @@
    - [11. Clean and build the project](#11-clean-and-build-the-project)
    - [12. Skip tests during build](#12-skip-tests-during-build)
    - [13. Run a specific test](#13-run-a-specific-test)
-8. [Debugging & Troubleshooting Commands](#8-debugging--troubleshooting-commands)  
+    [Debugging & Troubleshooting Commands](#8-debugging--troubleshooting-commands)  
    - [1. Enable Debugging Output](#1-enable-debugging-output)
    - [2. Print the Final POM (Project Configuration)](#2-print-the-final-pom-project-configuration)
    - [3. Show Information About a Plugin](#3-show-information-about-a-plugin)
    - [4. Force Maven to Update Dependencies](#4-force-maven-to-update-dependencies)
    - [5. Check Your Maven Version](#5-check-your-maven-version)
    - [6. Show Effective Settings](#6-show-effective-settings)
-9. [References](#9-references)
-10. [Contact Information](#contact-information)
+9. [Contact Information](#contact-information)
+10. [References](#references)
 
 
 ---
@@ -446,12 +446,21 @@ Expected Output
 
 ---
 
-## 9. References
+## 📬 **Contact Information**
+| **Name** | **Email Address**        |
+|----------|--------------------------|
+| **Prince Batra**  | **prince.batra.snaatak@mygurukulam.co**   |
 
-- [Official Apache Maven Documentation](https://maven.apache.org/guides/index.html)  
-- [Maven Lifecycle Reference](https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html)  
-- [Maven Plugin Documentation](https://maven.apache.org/plugins/)  
-- [Effective POM and Settings](https://maven.apache.org/configure.html)
+---
+
+## **References**
+
+| **Links** | **Overview** |
+|-----------|--------------|
+| [Official Apache Maven Documentation](https://maven.apache.org/guides/index.html) | Central hub for all official Maven guides and documentation. |
+| [Maven Lifecycle Reference](https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html) | Explains Maven's build lifecycle phases and how they are structured. |
+| [Maven Plugin Documentation](https://maven.apache.org/plugins/) | Index of official Maven plugins with usage details and configuration options. |
+| [Effective POM and Settings](https://maven.apache.org/configure.html) | Covers configuration management via `pom.xml` and `settings.xml`. |
 
 ---
 
@@ -460,3 +469,4 @@ Expected Output
 |----------|--------------------------|
 | **Prince Batra**  | **prince.batra.snaatak@mygurukulam.co**   |
 
+---
