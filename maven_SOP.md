@@ -1,4 +1,9 @@
-# 📋 SOP: Maven Common & Debugging Commands
+<p align="center">
+  <img src="https://maven.apache.org/images/maven-logo-black-on-white.png" alt="Apache Maven Logo" width="250"/>
+</p>
+
+
+# SOP: Maven Common & Debugging Commands
 
 ## 👤 **Author Information**
 | **Author** | **Created on** | **Version**  | **Comment** | **Reviewer** |
@@ -8,16 +13,36 @@
 
 ## 📑 Table of Contents
 
-1. [Introduction](#1-introduction) 
+1. [Introduction](#1-introduction)  
 2. [What is Maven?](#2-what-is-maven)  
 3. [Why Use Maven?](#3-why-use-maven)  
 4. [How Maven Works](#4-how-maven-works)  
 5. [Example Project Structure](#5-example-java-maven-project-structure)  
 6. [Prerequisites (Install Maven)](#6-prerequisites-install-on-local-system)  
-7. [Commonly Used Maven Commands](#7-commonly-used-maven-commands)  
-8. [Debugging & Troubleshooting Commands](#8-debugging--troubleshooting-commands)
+7. [Commonly Used Maven Commands](#7-commonly-used-maven-commands)
+   - [1. Clean compiled files](#1-clean-compiled-files)
+   - [2. Compile the project](#2-compile-the-project)
+   - [3. Run unit tests](#3-run-unit-tests)
+   - [4. Create a JAR/WAR](#4-create-a-jarwar)
+   - [5. Install the Project Locally](#5-install-the-project-locally)
+   - [6. Deploying the Project](#6-deploying-the-project)
+   - [7. Validate the Project](#7-validate-the-project)
+   - [8. Run integration tests](#8-run-integration-tests)
+   - [9. Download all dependencies](#9-download-all-dependencies)
+   - [10. Print all dependencies](#10-print-all-dependencies)
+   - [11. Clean and build the project](#11-clean-and-build-the-project)
+   - [12. Skip tests during build](#12-skip-tests-during-build)
+   - [13. Run a specific test](#13-run-a-specific-test)
+8. [Debugging & Troubleshooting Commands](#8-debugging--troubleshooting-commands)  
+   - [1. Enable Debugging Output](#1-enable-debugging-output)
+   - [2. Print the Final POM (Project Configuration)](#2-print-the-final-pom-project-configuration)
+   - [3. Show Information About a Plugin](#3-show-information-about-a-plugin)
+   - [4. Force Maven to Update Dependencies](#4-force-maven-to-update-dependencies)
+   - [5. Check Your Maven Version](#5-check-your-maven-version)
+   - [6. Show Effective Settings](#6-show-effective-settings)
 9. [References](#9-references)
 10. [Contact Information](#contact-information)
+
 
 ---
 
