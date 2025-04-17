@@ -1,5 +1,7 @@
 # SOP: Managing Cron Jobs on Ubuntu
 
+<img src="https://miro.medium.com/v2/resize:fit:670/1*ukNvgqV-HTHTebPHZMFNgg.png" width="300" height="auto" />
+
 ## 👤 **Author Information**
 | **Author** | **Created on** | **Version**  | **Comment** | **Reviewer** |
 |------------|----------------|--------------|-------------|--------------|
@@ -17,8 +19,8 @@
   - [6. Check System Cron Logs](#6-check-system-cron-logs)
   - [7. System & Directory-Based Cron Jobs](#7-system--directory-based-cron-jobs)
   - [8. Example Cron Jobs for Common Use Cases](#8-example-cron-jobs-for-common-use-cases)
-  - [9. References](#9-references)
-  - [10. Contact Information](#contact-information)
+  - [9. Contact Information](#contact-information)
+  - [10. References](#9-references)
 
 ---
 
@@ -296,15 +298,6 @@ Run log rotation every day at midnight:
 ```
 0 0 * * * root /usr/sbin/logrotate /etc/logrotate.conf
 ```
----
-
-## 9. References
-
-1. [Cron Jobs - Ask Ubuntu](https://askubuntu.com/questions/2368/how-do-i-set-up-a-cron-job)  
-   - Official documentation about cron jobs and crontab file format.
-
-2. [Using Cron for Automation](https://www.digitalocean.com/community/tutorials/how-to-use-cron-to-automate-tasks-ubuntu-1804))  
-   - A blog post from DigitalOcean explaining cron jobs and how they can be used for automation tasks.
 
 ---
 
@@ -312,4 +305,17 @@ Run log rotation every day at midnight:
 | **Name** | **Email Address**        |
 |----------|--------------------------|
 | **Prince Batra**  | **prince.batra.snaatak@mygurukulam.co**   |
+
+
+## **Reference**
+
+| **Links** | **Overview** |
+|-----------|--------------|
+| [Cron Jobs - Ask Ubuntu](https://askubuntu.com/questions/2368/how-do-i-set-up-a-cron-job) | Guide on setting up cron jobs and the crontab format. |
+| [Using Cron for Automation – DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-use-cron-to-automate-tasks-ubuntu-1804) | Tutorial on automating tasks with cron. |
+
+---
+
+---
+
 
