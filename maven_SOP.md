@@ -126,7 +126,7 @@ mvn -v
 | 3. Show Information About a Plugin | `mvn help:describe -Dplugin=<plugin-name> -Ddetail` | `[INFO] Describing plugin org.apache.maven.plugins:maven-clean-plugin:3.1.0` | Describes usage, goals, and config of a specific plugin. | When understanding or troubleshooting Maven plugins. |
 | 4. Force Maven to Update Dependencies | `mvn clean install -U` | `[INFO] BUILD SUCCESS` | Downloads the latest versions of dependencies, even if already cached locally. | When your project uses outdated libraries or new versions are not picked up |
 | 5. Check Your Maven Version | `mvn -v` | `Apache Maven 3.6.3`<br>`Maven home: /path/to/maven`<br>`Java version: 1.8.0_252, vendor: Oracle Corporation` | Shows your Maven and Java versions. | To confirm installed versions or check compatibility issues. |
-| 6. Show Effective Settings | `mvn help:effective-settings` | `[INFO] Effective settings for Maven` | Displays the final settings Maven uses (default + custom
+| 6. Show Effective Settings | `mvn help:effective-settings` | `[INFO] Effective settings for Maven` | Displays the final settings Maven uses (default + custom) | For debugging settings or verifying profile configurations.
 
 ---
 
