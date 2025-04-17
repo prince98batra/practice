@@ -251,7 +251,7 @@ sudo nano /etc/cron.d/user2_hello_cron
 ```
 This runs the script daily at 2:00 AM as the user2
 
----
+-
 
 **🗓️ Time-Based Cron Directories**
 
@@ -306,6 +306,7 @@ Run log rotation every day at midnight:
 |----------|--------------------------|
 | **Prince Batra**  | **prince.batra.snaatak@mygurukulam.co**   |
 
+---
 
 ## **Reference**
 
@@ -315,7 +316,4 @@ Run log rotation every day at midnight:
 | [Using Cron for Automation – DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-use-cron-to-automate-tasks-ubuntu-1804) | Tutorial on automating tasks with cron. |
 
 ---
-
----
-
 
