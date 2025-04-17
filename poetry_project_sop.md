@@ -14,15 +14,17 @@
 - [Introduction](#1-introduction)
 - [Prerequisites](#2-prerequisites)
 - [What is Poetry](#3-What-is-Poetry)
-- [Why Use Poetry](#3-Why-is-Poetry)
-- [Step-by-Step Instructions](#3-step-by-step-instructions)  
+- [Why Use Poetry](#4-Why-is-Poetry)
+- [Step-by-Step Instructions](#5-step-by-step-instructions)  
   - [📍 Step 1: Install Python & pip](#-step-1-install-python--pip-if-not-already-installed)  
   - [📍 Step 2: Install Poetry](#-step-2-install-poetry)  
   - [📍 Step 3: Create a New Poetry Project](#-step-3-create-a-new-poetry-project)  
   - [📍 Step 4: Create & Activate Virtual Environment](#-step-4-create--activate-virtual-environment)  
   - [📍 Step 5: Add Dependencies](#-step-5-add-dependencies)  
   - [📍 Step 6: Create a Simple Python Script (`cartpy`)](#-step-6-create-a-simple-python-script-cartpy)  
-  - [📍 Step 7: Run the Script Using Poetry](#-step-7-run-the-script-using-poetry-running-in-context)  
+  - [📍 Step 7: Run the Script Using Poetry](#-step-7-run-the-script-using-poetry-running-in-context)
+- [Conclusion](#8-Conclusion)
+- [Reference](#9-Reference)
 
 ---
 
@@ -162,19 +164,19 @@ Running the script with `poetry run` ensures it uses the isolated virtual enviro
 
 ---
 
-## 🧾 Conclusion
+## 8. Conclusion
 Poetry simplifies Python project management and is perfect for beginners and teams. It keeps dependencies and environments isolated, reducing bugs and setup issues. If you’re starting a new project, always prefer using Poetry for a clean, maintainable structure.
 
 ---
 
-## Reference
+## 9. Reference
 - [Official Poetry Documentation](https://python-poetry.org/docs/)
 - [Poetry GitHub Repository](https://github.com/python-poetry/poetry)
 - [PEP 518 - pyproject.toml](https://peps.python.org/pep-0518/)
 
 ---
 
-## 📬 **Contact Information**
+## **Contact Information**
 | **Name** | **Email Address**        |
 |----------|--------------------------|
 | **Prince Batra**  | **prince.batra.snaatak@mygurukulam.co**   |
