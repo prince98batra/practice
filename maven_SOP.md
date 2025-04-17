@@ -117,16 +117,16 @@ mvn -v
 
 ---
 
-## **8. Debugging & Troubleshooting Commands**
+## 8. Debugging & Troubleshooting Commands
 
-| **#** | **Command** | **Expected Output** | **Purpose** | **When to Use** |
-|------|-------------|---------------------|-------------|-----------------|
-| 1. **Enable Debugging Output** | ```bash<br>mvn -X<br>``` | ```bash<br>[DEBUG] [INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ project-name ---<br>[DEBUG] [INFO] BUILD SUCCESS<br>``` | Shows detailed logs for the entire build process. | When builds fail and you need more context for debugging. |
-| 2. **Print the Final POM (Project Configuration)** | ```bash<br>mvn help:effective-pom<br>``` | ```bash<br>[INFO] Scanning for projects...<br>[INFO] Effective POM for project project-name: 1.0-SNAPSHOT<br>``` | Shows complete effective project configuration. | To view all applied POM settings including inherited ones. |
-| 3. **Show Information About a Plugin** | ```bash<br>mvn help:describe -Dplugin=<plugin-name> -Ddetail<br>``` | ```bash<br>[INFO] Describing plugin org.apache.maven.plugins:maven-clean-plugin:3.1.0<br>``` | Describes usage, goals, and config of a specific plugin. | When understanding or troubleshooting Maven plugins. |
-| 4. **Force Maven to Update Dependencies** | ```bash<br>mvn clean install -U<br>``` | ```bash<br>[INFO] BUILD SUCCESS<br>``` | Downloads the latest versions of dependencies, even if already cached locally. | When your project uses outdated libraries or new versions are not picked up |
-| 5. **Check Your Maven Version** | ```bash<br>mvn -v<br>``` | ```bash<br>Apache Maven 3.6.3<br>Maven home: /path/to/maven<br>Java version: 1.8.0_252, vendor: Oracle Corporation<br>``` | Shows your Maven and Java versions. | To confirm installed versions or check compatibility issues. |
-| 6. **Show Effective Settings** | ```bash<br>mvn help:effective-settings<br>``` | ```bash<br>[INFO] Effective settings for Maven<br>``` | Displays the final settings Maven uses (default + custom). | For debugging settings or verifying profile configurations. |
+| Task | Command | Expected Output | Purpose | When to Use |
+|------|---------|-----------------|---------|-------------|
+| 1. Enable Debugging Output | `mvn -X` | `[DEBUG] [INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ project-name ---`<br>`[DEBUG] [INFO] BUILD SUCCESS` | Shows detailed logs for the entire build process. | When builds fail and you need more context for debugging. |
+| 2. Print the Final POM (Project Configuration) | `mvn help:effective-pom` | `[INFO] Scanning for projects...`<br>`[INFO] Effective POM for project project-name: 1.0-SNAPSHOT` | Shows complete effective project configuration. | To view all applied POM settings including inherited ones. |
+| 3. Show Information About a Plugin | `mvn help:describe -Dplugin=<plugin-name> -Ddetail` | `[INFO] Describing plugin org.apache.maven.plugins:maven-clean-plugin:3.1.0` | Describes usage, goals, and config of a specific plugin. | When understanding or troubleshooting Maven plugins. |
+| 4. Force Maven to Update Dependencies | `mvn clean install -U` | `[INFO] BUILD SUCCESS` | Downloads the latest versions of dependencies, even if already cached locally. | When your project uses outdated libraries or new versions are not picked up |
+| 5. Check Your Maven Version | `mvn -v` | `Apache Maven 3.6.3`<br>`Maven home: /path/to/maven`<br>`Java version: 1.8.0_252, vendor: Oracle Corporation` | Shows your Maven and Java versions. | To confirm installed versions or check compatibility issues. |
+| 6. Show Effective Settings | `mvn help:effective-settings` | `[INFO] Effective settings for Maven` | Displays the final settings Maven uses (default + custom
 
 ---
 
