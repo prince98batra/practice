@@ -13,9 +13,9 @@
 
 ## 📖 Table of Contents    
 - [Introduction](#1-introduction)
-- [Prerequisites](#2-prerequisites)
-- [What is Poetry](#3-What-is-Poetry)
-- [Why Use Poetry](#4-Why-is-Poetry)
+- [What is Poetry](#2-What-is-Poetry)
+- [Why Use Poetry](#3-Why-is-Poetry)
+- [Prerequisites](#4-prerequisites)
 - [Step-by-Step Instructions](#5-step-by-step-instructions)  
   - [📍 Step 1: Install Python & pip](#-step-1-install-python--pip-if-not-already-installed)  
   - [📍 Step 2: Install Poetry](#-step-2-install-poetry)  
@@ -26,7 +26,7 @@
   - [📍 Step 7: Run the Script Using Poetry](#-step-7-run-the-script-using-poetry-running-in-context)
 - [Conclusion](#8-Conclusion)
 - [Contact Information](#Contact-Information)
-- [Reference](#-Reference)
+- [Reference](#Reference)
 ---
 
 ## 1. Introduction
@@ -35,22 +35,22 @@
 
 ---
 
-## 2. Prerequisites  
-- Python 3.x and pip installed on the system   
-
----
-
-## 3. What is Poetry
+## 2. What is Poetry
 Poetry is a tool in Python that helps you manage project dependencies (packages), virtual environments, and packaging—all in one place. Instead of manually installing and tracking Python libraries, Poetry handles everything for you using simple commands.
 
 ---
 
-## 4. Why Use Poetry
+## 3. Why Use Poetry
 Using Poetry saves time and avoids common mistakes:
 - It automatically creates virtual environments so your system’s Python setup stays clean.
 - It tracks your installed packages in one file (`pyproject.toml`) and locks their versions in `poetry.lock`.
 - It helps you install, update, and remove packages easily.
 
+---
+
+## 4. Prerequisites  
+- Python 3.x and pip installed on the system
+  
 ---
 
 ## 5. Step-by-Step Instructions  
