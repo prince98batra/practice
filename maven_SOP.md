@@ -56,10 +56,10 @@ This SOP provides a quick reference to the most commonly used Maven commands and
 
 ```bash
 java/
-├── pom.xml
-└── src/
-    └── main/
-        └── java/
+├── pom.xml                     # Project Object Model file (Maven's config file)
+└── src/                        # Source folder (contains all project code)
+    └── main/                   # Main application code (not tests)
+        └── java/               # Java source files go here (e.g., .java classes)
 ```
 
 ---
