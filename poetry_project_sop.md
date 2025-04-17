@@ -1,21 +1,15 @@
 
 # SOP: Managing a Poetry Project for Python
 
-**Owner**: Prince Batra  
-**Team**: Development Team  
-**Date Created**: 15-Apr-2025  
-**Last Updated**: 15-Apr-2025  
-
----
-
-## 📦 Stack Details  
-**Component**: Poetry (Python Dependency Manager)  
-**OS/Platform**: Ubuntu 22.04 LTS  
+## 👤 **Author Information**
+| **Author** | **Created on** | **Version**  | **Comment** | **Reviewer** |
+|------------|----------------|--------------|-------------|--------------|
+| **Prince Batra**   | **15-04-2025**   | **Version 1** | **Internal review** | **Siddharth Pawar** |
 
 ---
 
 ## 🎯 Purpose  
-This SOP provides detailed instructions on setting up a Poetry project for managing Python dependencies and virtual environments. It ensures a smooth workflow for Python project development.
+This SOP provides detailed instructions on setting up a Poetry project for managing Python dependencies and virtual environments. It ensures a smooth workflow for Python project development. 
 
 ---
 
@@ -143,8 +137,8 @@ Running the script with `poetry run` ensures it uses the isolated virtual enviro
 
 ## 🔚 End of SOP
 
-| Date       | Author        | Change Description         |
-|------------|---------------|----------------------------|
-| 15-Apr-25  | Prince Batra  | Initial draft  |
-
+## 📬 **Contact Information**
+| **Name** | **Email Address**        |
+|----------|--------------------------|
+| **Prince Batra**  | **prince.batra.snaatak@mygurukulam.co**   |
 ---
