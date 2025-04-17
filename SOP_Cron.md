@@ -308,7 +308,7 @@ Run log rotation every day at midnight:
 
 ---
 
-## **Reference**
+## **References**
 
 | **Links** | **Overview** |
 |-----------|--------------|
