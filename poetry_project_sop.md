@@ -1,14 +1,14 @@
 
 # SOP: Python Poetry
 
+![image](https://th.bing.com/th/id/OIP.u0ITNfG1tfzVyuLcZWPWTAHaD4?w=343&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7)
+
 ## 👤 **Author Information**
 | **Author** | **Created on** | **Version**  | **Comment** | **Reviewer** |
 |------------|----------------|--------------|-------------|--------------|
 | **Prince Batra**   | **15-04-2025**   | **Version 1** | **Internal review** | **Siddharth Pawar** |
 
 ---
-
-# 📘 Python Poetry Project Setup SOP
 
 ## 📖 Table of Contents    
 - [📌 Introduction](#1-introduction)
@@ -23,8 +23,12 @@
   - [📍 Step 7: Run the Script Using Poetry](#-step-7-run-the-script-using-poetry-running-in-context)  
 
 ---
-## 1. Introduction  
-Poetry is a Python dependency manager and packaging tool that simplifies the process of managing libraries and virtual environments. It allows developers to easily add dependencies, configure virtual environments, and run commands within isolated environments.
+
+## 📘 Introduction
+
+Sure! Here's an even shorter and crisper version:
+
+**Poetry** is a simple, all-in-one tool for managing Python projects, dependencies, and environments—making setup and collaboration easy and consistent.
 
 ---
 
@@ -33,7 +37,20 @@ Poetry is a Python dependency manager and packaging tool that simplifies the pro
 
 ---
 
-## 3. Step-by-Step Instructions  
+## 3. What is Poetry
+Poetry is a tool in Python that helps you manage project dependencies (packages), virtual environments, and packaging—all in one place. Instead of manually installing and tracking Python libraries, Poetry handles everything for you using simple commands.
+
+---
+
+## 4. Why Use Poetry
+Using Poetry saves time and avoids common mistakes:
+- It automatically creates virtual environments so your system’s Python setup stays clean.
+- It tracks your installed packages in one file (`pyproject.toml`) and locks their versions in `poetry.lock`.
+- It helps you install, update, and remove packages easily.
+
+---
+
+## 5. Step-by-Step Instructions  
 
 ### 📍 Step 1: Install Python & pip (If not already installed)
 
@@ -145,7 +162,17 @@ Running the script with `poetry run` ensures it uses the isolated virtual enviro
 
 ---
 
-## 🔚 End of SOP
+## 🧾 Conclusion
+Poetry simplifies Python project management and is perfect for beginners and teams. It keeps dependencies and environments isolated, reducing bugs and setup issues. If you’re starting a new project, always prefer using Poetry for a clean, maintainable structure.
+
+---
+
+## Reference
+- [Official Poetry Documentation](https://python-poetry.org/docs/)
+- [Poetry GitHub Repository](https://github.com/python-poetry/poetry)
+- [PEP 518 - pyproject.toml](https://peps.python.org/pep-0518/)
+
+---
 
 ## 📬 **Contact Information**
 | **Name** | **Email Address**        |
