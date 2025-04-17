@@ -1,4 +1,4 @@
-<img src="https://miro.medium.com/v2/resize:fit:670/1*ukNvgqV-HTHTebPHZMFNgg.png" width="400" height="auto" />
+<img src="https://miro.medium.com/v2/resize:fit:606/1*F3Rj5QhHIxJBeot36OcN2w.png" width="300" height="auto" />
 
 # SOP: Managing Cron Jobs on Ubuntu
 
@@ -20,7 +20,7 @@
   - [7. System & Directory-Based Cron Jobs](#7-system--directory-based-cron-jobs)
   - [8. Example Cron Jobs for Common Use Cases](#8-example-cron-jobs-for-common-use-cases)
   - [9. Contact Information](#contact-information)
-  - [10. References](#9-references)
+  - [10. References](#-references)
 
 ---
 
