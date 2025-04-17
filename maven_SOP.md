@@ -112,7 +112,7 @@ mvn -v
 
 ---
 
-## ✅ **7. Commonly Used Maven Commands**
+## **7. Commonly Used Maven Commands**
 
 ---
 
