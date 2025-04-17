@@ -10,10 +10,9 @@
 
 # 📘 Python Poetry Project Setup SOP
 
-## 📖 Table of Contents  
-- [🎯 Purpose](#-purpose)  
-- [🛠 Prerequisites](#-prerequisites)  
-- [📌 Introduction](#1-introduction)  
+## 📖 Table of Contents    
+- [📌 Introduction](#1-introduction)
+- [🛠 Prerequisites](#2-prerequisites)
 - [🧭 Step-by-Step Instructions](#2-step-by-step-instructions)  
   - [📍 Step 1: Install Python & pip](#-step-1-install-python--pip-if-not-already-installed)  
   - [📍 Step 2: Install Poetry](#-step-2-install-poetry)  
