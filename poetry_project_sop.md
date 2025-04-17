@@ -6,7 +6,14 @@
 ## 👤 **Author Information**
 | **Author** | **Created on** | **Version**  | **Comment** | **Reviewer** |
 |------------|----------------|--------------|-------------|--------------|
-| **Prince Batra**   | **15-04-2025**   | **Version 1** | **Internal review** | **Siddharth Pawar** |
+| **Prince Batra**   | **15-04-2025**   | **Version 1.1** | **Internal review** | **Siddharth Pawar** |
+
+---
+
+## 👤 **Author Information**
+| **Author** | **Created on** | **Version**  | **Comment** | **Reviewer** |
+|------------|----------------|--------------|-------------|--------------|
+| **Prince Batra**   | **15-04-2025**   | **Version 1.1** | **L0 review** | **Shikha** |
 
 ---
 
@@ -24,8 +31,8 @@
   - [📍 Step 6: Create a Simple Python Script (`cartpy`)](#-step-6-create-a-simple-python-script-cartpy)  
   - [📍 Step 7: Run the Script Using Poetry](#-step-7-run-the-script-using-poetry-running-in-context)
 - [Conclusion](#8-Conclusion)
-- [Reference](#9-Reference)
 - [Contact Information](#Contact-Information)
+- [Reference](#-Reference)
 ---
 
 ## 1. Introduction
@@ -169,15 +176,16 @@ Poetry simplifies Python project management and is perfect for beginners and tea
 
 ---
 
-## 9. Reference
-- [Official Poetry Documentation](https://python-poetry.org/docs/)
-- [Poetry GitHub Repository](https://github.com/python-poetry/poetry)
-- [PEP 518 - pyproject.toml](https://peps.python.org/pep-0518/)
-
----
-
 ## **Contact Information**
 | **Name** | **Email Address**        |
 |----------|--------------------------|
 | **Prince Batra**  | **prince.batra.snaatak@mygurukulam.co**   |
+
+---
+
+## **Reference**
+- [Official Poetry Documentation](https://python-poetry.org/docs/)
+- [Poetry GitHub Repository](https://github.com/python-poetry/poetry)
+- [PEP 518 - pyproject.toml](https://peps.python.org/pep-0518/)
+
 ---
