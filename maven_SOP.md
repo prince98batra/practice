@@ -446,7 +446,7 @@ Expected Output
 
 ---
 
-## 📬 **Contact Information**
+## **Contact Information**
 | **Name** | **Email Address**        |
 |----------|--------------------------|
 | **Prince Batra**  | **prince.batra.snaatak@mygurukulam.co**   |
@@ -461,12 +461,5 @@ Expected Output
 | [Maven Lifecycle Reference](https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html) | Explains Maven's build lifecycle phases and how they are structured. |
 | [Maven Plugin Documentation](https://maven.apache.org/plugins/) | Index of official Maven plugins with usage details and configuration options. |
 | [Effective POM and Settings](https://maven.apache.org/configure.html) | Covers configuration management via `pom.xml` and `settings.xml`. |
-
----
-
-## 📬 **Contact Information**
-| **Name** | **Email Address**        |
-|----------|--------------------------|
-| **Prince Batra**  | **prince.batra.snaatak@mygurukulam.co**   |
 
 ---
