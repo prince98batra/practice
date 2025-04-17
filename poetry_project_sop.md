@@ -184,8 +184,10 @@ Poetry simplifies Python project management and is perfect for beginners and tea
 ---
 
 ## **Reference**
-- [Official Poetry Documentation](https://python-poetry.org/docs/)
-- [Poetry GitHub Repository](https://github.com/python-poetry/poetry)
-- [PEP 518 - pyproject.toml](https://peps.python.org/pep-0518/)
+| **Links** | **Overview** |
+|---------------|-------------|
+| [Poetry Docs](https://python-poetry.org/docs/) | Guides on using Poetry for dependency management, publishing, and configuration. |
+| [Poetry GitHub](https://github.com/python-poetry/poetry) | The source code and issue tracker for Poetry. Useful for devs or contributors. |
+| [PEP 518](https://peps.python.org/pep-0518/) | The PEP introducing the `pyproject.toml` standard for Python build systems. |
 
 ---
