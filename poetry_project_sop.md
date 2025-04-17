@@ -7,12 +7,6 @@
 | **Author** | **Created on** | **Version**  | **Comment** | **Reviewer** |
 |------------|----------------|--------------|-------------|--------------|
 | **Prince Batra**   | **15-04-2025**   | **Version 1.1** | **Internal review** | **Siddharth Pawar** |
-
----
-
-## 👤 **Author Information**
-| **Author** | **Created on** | **Version**  | **Comment** | **Reviewer** |
-|------------|----------------|--------------|-------------|--------------|
 | **Prince Batra**   | **15-04-2025**   | **Version 1.1** | **L0 review** | **Shikha** |
 
 ---
