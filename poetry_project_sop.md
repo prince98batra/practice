@@ -24,7 +24,7 @@
   - [📍 Step 5: Add Dependencies](#-step-5-add-dependencies)  
   - [📍 Step 6: Create a Simple Python Script (`cartpy`)](#-step-6-create-a-simple-python-script-cartpy)  
   - [📍 Step 7: Run the Script Using Poetry](#-step-7-run-the-script-using-poetry-running-in-context)
-- [Conclusion](#8-Conclusion)
+- [Conclusion](#6-Conclusion)
 - [Contact Information](#Contact-Information)
 - [Reference](#Reference)
 ---
@@ -165,7 +165,7 @@ Running the script with `poetry run` ensures it uses the isolated virtual enviro
 
 ---
 
-## 8. Conclusion
+## 6. Conclusion
 Poetry simplifies Python project management and is perfect for beginners and teams. It keeps dependencies and environments isolated, reducing bugs and setup issues. If you’re starting a new project, always prefer using Poetry for a clean, maintainable structure.
 
 ---
