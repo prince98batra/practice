@@ -1,5 +1,5 @@
 
-# SOP: Managing a Poetry Project for Python
+# SOP: Python Poetry
 
 ## 👤 **Author Information**
 | **Author** | **Created on** | **Version**  | **Comment** | **Reviewer** |
