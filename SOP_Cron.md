@@ -1,4 +1,4 @@
-<img src="https://miro.medium.com/v2/resize:fit:670/1*ukNvgqV-HTHTebPHZMFNgg.png" width="200" height="auto" />
+<img src="https://miro.medium.com/v2/resize:fit:670/1*ukNvgqV-HTHTebPHZMFNgg.png" width="350" height="auto" />
 
 # SOP: Managing Cron Jobs on Ubuntu
 
