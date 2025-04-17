@@ -6,31 +6,28 @@
 | **Prince Batra**   | **14-04-2025**   | **Version 1** | **Internal review** | **Siddharth Pawar** |
 ---
 
-## 📑 2. Table of Contents
+## 📑 Table of Contents
 
-1. [Author Information](#1-author-information)  
-2. [Table of Contents](#2-table-of-contents)  
-3. [Purpose](#3-purpose)  
-4. [What is Maven?](#4-what-is-maven)  
-5. [Why Use Maven?](#5-why-use-maven)  
-6. [How Maven Works](#6-how-maven-works)  
-7. [Example Project Structure](#7-example-java-maven-project-structure)  
-8. [Prerequisites (Install Maven)](#8-prerequisites-install-on-local-system)  
-9. [Commonly Used Maven Commands](#9-commonly-used-maven-commands)  
-10. [Debugging & Troubleshooting Commands](#10-debugging--troubleshooting-commands)
-11. [References](#11-references)
-12. [Contact Information](#12-contact-information)  
-
+1. [Introduction](#1-introduction) 
+2. [What is Maven?](#2-what-is-maven)  
+3. [Why Use Maven?](#3-why-use-maven)  
+4. [How Maven Works](#4-how-maven-works)  
+5. [Example Project Structure](#5-example-java-maven-project-structure)  
+6. [Prerequisites (Install Maven)](#6-prerequisites-install-on-local-system)  
+7. [Commonly Used Maven Commands](#7-commonly-used-maven-commands)  
+8. [Debugging & Troubleshooting Commands](#8-debugging--troubleshooting-commands)
+9. [References](#9-references)
+10. [Contact Information](#contact-information)
 
 ---
 
-## 🎯 3. Purpose
+## 🧭 1. Introduction
 
-This SOP provides step-by-step Maven usage for Java-based projects. It includes installation, frequently used build and test commands, and debugging tools. Ideal for developers during local development, builds, and error analysis.
+This SOP provides a quick reference to the most commonly used Maven commands and debugging techniques for Java developers. It is meant to simplify daily development tasks such as building, testing, and troubleshooting Maven-based projects in local environments.
 
 ---
 
-## 📘 4. What is Maven?
+## 📘 2. What is Maven?
 
 - Maven is a build automation tool designed for Java projects.  
 - It helps manage project builds, reporting, documentation, and dependencies.  
@@ -38,7 +35,7 @@ This SOP provides step-by-step Maven usage for Java-based projects. It includes 
 
 ---
 
-## 🤔 5. Why Use Maven?
+## 🤔 3. Why Use Maven?
 
 - Simplifies project structure and build lifecycle.  
 - Automatically downloads dependencies.  
@@ -47,7 +44,7 @@ This SOP provides step-by-step Maven usage for Java-based projects. It includes 
 
 ---
 
-## ⚙️ 6. How Maven Works
+## ⚙️ 4. How Maven Works
 
 - Maven follows a build lifecycle with phases like **validate → compile → test → package → verify → install → deploy**.  
 - All configuration lies in the `pom.xml` file.  
@@ -55,7 +52,7 @@ This SOP provides step-by-step Maven usage for Java-based projects. It includes 
 
 ---
 
-## 🗂️ 7. Example Java Maven Project Structure
+## 🗂️ 5. Example Java Maven Project Structure
 
 ```bash
 java/
@@ -67,7 +64,7 @@ java/
 
 ---
 
-## 🛠 8. Prerequisites (Install on Local System)
+## 🛠 6. Prerequisites (Install on Local System)
 
 ### ✅ Step 1: Install Java (JDK 11 or higher)
 
@@ -90,7 +87,7 @@ mvn -v
 
 ---
 
-## ✅ **9. Commonly Used Maven Commands**
+## ✅ **7. Commonly Used Maven Commands**
 
 ---
 
@@ -312,7 +309,7 @@ Expected Output
 ---
 
 
-## 😞 10. Debugging & Troubleshooting Commands
+## 😞 8. Debugging & Troubleshooting Commands
 
 
 ### 1. **Enable Debugging Output**
@@ -424,7 +421,7 @@ Expected Output
 
 ---
 
-## 📚 11. References
+## 📚 9. References
 
 - [Official Apache Maven Documentation](https://maven.apache.org/guides/index.html)  
 - [Maven Lifecycle Reference](https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html)  
