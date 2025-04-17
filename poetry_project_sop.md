@@ -13,7 +13,7 @@
 ## 📖 Table of Contents    
 - [📌 Introduction](#1-introduction)
 - [🛠 Prerequisites](#2-prerequisites)
-- [🧭 Step-by-Step Instructions](#2-step-by-step-instructions)  
+- [🧭 Step-by-Step Instructions](#3-step-by-step-instructions)  
   - [📍 Step 1: Install Python & pip](#-step-1-install-python--pip-if-not-already-installed)  
   - [📍 Step 2: Install Poetry](#-step-2-install-poetry)  
   - [📍 Step 3: Create a New Poetry Project](#-step-3-create-a-new-poetry-project)  
@@ -28,7 +28,7 @@ Poetry is a Python dependency manager and packaging tool that simplifies the pro
 
 ---
 
-## 2.Prerequisites  
+## 2. Prerequisites  
 - Python 3.x and pip installed on the system   
 
 ---
