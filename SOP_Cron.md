@@ -10,7 +10,7 @@
 ## 📑 Table of Contents
 
   - [1. Introduction](#1-introduction)
-  - [2. What is cron, crontab, and cron job?](#2-what-is-cron-crontab-and-cron-job)
+  - [2. What is cron, crontab and cron job?](#2-what-is-cron-crontab-and-cron-job)
   - [3. Cron Syntax Format](#3-cron-syntax-format)
   - [4. Prerequisites](#4-prerequisites)
   - [5. Creating, Viewing, Removing and Editing Cron Jobs](#5-creating-viewing-removing-and-editing-cron-jobs)
