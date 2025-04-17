@@ -6,44 +6,68 @@
 | **Prince Batra**   | **14-04-2025**   | **Version 1** | **Internal review** | **Siddharth Pawar** |
 ---
 
-## 🌟 Purpose
+## 📑 2. Table of Contents
 
-This SOP provides local Maven usage for Java-based projects. It includes installation, commonly used Maven commands, and debugging tips. Ideal for building, testing, and troubleshooting Java apps.
+1. [Author Information](#1-author-information)  
+2. [Table of Contents](#2-table-of-contents)  
+3. [Purpose](#3-purpose)  
+4. [What is Maven?](#4-what-is-maven)  
+5. [Why Use Maven?](#5-why-use-maven)  
+6. [How Maven Works](#6-how-maven-works)  
+7. [Example Project Structure](#7-example-java-maven-project-structure)  
+8. [Prerequisites (Install Maven)](#8-prerequisites-install-on-local-system)  
+9. [Commonly Used Maven Commands](#9-commonly-used-maven-commands)  
+10. [Debugging & Troubleshooting Commands](#10-debugging--troubleshooting-commands)
+11. [References](#11-references)
+12. [Contact Information](#12-contact-information)  
 
----
-
-## 📘 What is Maven?
-
-- Maven is a build automation tool for Java projects, managing builds, dependencies, and testing.
-- It simplifies the compilation, packaging, and deployment of Java applications for developers.
-- The **pom.xml** file defines project details, dependencies, plugins, and build configurations efficiently.
-
----
-
-## 🛠️ How Maven Works
-
-Maven follows a lifecycle to compile code, run tests, and create a deployable file. 
-
-- Code is written in **src/main/java**.
-- Tests are written in **src/test/java**.
-- Maven compiles, tests, and packages it based on **pom.xml** instructions.
 
 ---
 
-## 📂 Example Java Maven Project Structure
+## 🎯 3. Purpose
 
-Assume this folder exists:
+This SOP provides step-by-step Maven usage for Java-based projects. It includes installation, frequently used build and test commands, and debugging tools. Ideal for developers during local development, builds, and error analysis.
+
+---
+
+## 📘 4. What is Maven?
+
+- Maven is a build automation tool designed for Java projects.  
+- It helps manage project builds, reporting, documentation, and dependencies.  
+- A central configuration file `pom.xml` manages all settings.
+
+---
+
+## 🤔 5. Why Use Maven?
+
+- Simplifies project structure and build lifecycle.  
+- Automatically downloads dependencies.  
+- Supports testing, packaging, and deployment in a standardized way.  
+- Makes team collaboration easier with consistent builds.
+
+---
+
+## ⚙️ 6. How Maven Works
+
+- Maven follows a build lifecycle with phases like **validate → compile → test → package → verify → install → deploy**.  
+- All configuration lies in the `pom.xml` file.  
+- Code lives inside `src/main/java`, and test files inside `src/test/java`.
+
+---
+
+## 🗂️ 7. Example Java Maven Project Structure
+
 ```bash
 java/
-├── pom.xml                     # Project Object Model file (Maven's config file)
-└── src/                        # Source folder (contains all project code)
-    └── main/                   # Main application code (not tests)
-        └── java/               # Java source files go here (e.g., .java classes)
+├── pom.xml
+└── src/
+    └── main/
+        └── java/
 ```
 
 ---
 
-## 🛠 Prerequisites (Install on Local System)
+## 🛠 8. Prerequisites (Install on Local System)
 
 ### ✅ Step 1: Install Java (JDK 11 or higher)
 
@@ -66,7 +90,7 @@ mvn -v
 
 ---
 
-## ✅ **Commonly Used Maven Commands**
+## ✅ **9. Commonly Used Maven Commands**
 
 ---
 
@@ -288,7 +312,7 @@ Expected Output
 ---
 
 
-## 😞 Debugging & Troubleshooting Commands
+## 😞 10. Debugging & Troubleshooting Commands
 
 
 ### 1. **Enable Debugging Output**
@@ -400,13 +424,17 @@ Expected Output
 
 ---
 
-## 🔚 End of SOP
+## 📚 11. References
+
+- [Official Apache Maven Documentation](https://maven.apache.org/guides/index.html)  
+- [Maven Lifecycle Reference](https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html)  
+- [Maven Plugin Documentation](https://maven.apache.org/plugins/)  
+- [Effective POM and Settings](https://maven.apache.org/configure.html)
+
+---
 
 ## 📬 **Contact Information**
 | **Name** | **Email Address**        |
 |----------|--------------------------|
 | **Prince Batra**  | **prince.batra.snaatak@mygurukulam.co**   |
-
----
-
 
