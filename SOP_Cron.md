@@ -251,7 +251,7 @@ sudo nano /etc/cron.d/user2_hello_cron
 ```
 This runs the script daily at 2:00 AM as the user2
 
--
+---
 
 **🗓️ Time-Based Cron Directories**
 
