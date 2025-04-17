@@ -21,13 +21,13 @@
 
 ---
 
-## 🧭 1. Introduction
+## 1. Introduction
 
 This SOP provides a quick reference to the most commonly used Maven commands and debugging techniques for Java developers. It is meant to simplify daily development tasks such as building, testing, and troubleshooting Maven-based projects in local environments.
 
 ---
 
-## 📘 2. What is Maven?
+## 2. What is Maven?
 
 - Maven is a build automation tool designed for Java projects.  
 - It helps manage project builds, reporting, documentation, and dependencies.  
@@ -35,7 +35,7 @@ This SOP provides a quick reference to the most commonly used Maven commands and
 
 ---
 
-## 🤔 3. Why Use Maven?
+## 3. Why Use Maven?
 
 - Simplifies project structure and build lifecycle.  
 - Automatically downloads dependencies.  
@@ -44,7 +44,7 @@ This SOP provides a quick reference to the most commonly used Maven commands and
 
 ---
 
-## ⚙️ 4. How Maven Works
+## 4. How Maven Works
 
 - Maven follows a build lifecycle with phases like **validate → compile → test → package → verify → install → deploy**.  
 - All configuration lies in the `pom.xml` file.  
@@ -52,7 +52,7 @@ This SOP provides a quick reference to the most commonly used Maven commands and
 
 ---
 
-## 🗂️ 5. Example Java Maven Project Structure
+## 5. Example Java Maven Project Structure
 
 ```bash
 java/
@@ -64,7 +64,7 @@ java/
 
 ---
 
-## 🛠 6. Prerequisites (Install on Local System)
+## 6. Prerequisites (Install on Local System)
 
 ### ✅ Step 1: Install Java (JDK 11 or higher)
 
@@ -309,7 +309,7 @@ Expected Output
 ---
 
 
-## 😞 8. Debugging & Troubleshooting Commands
+## 8. Debugging & Troubleshooting Commands
 
 
 ### 1. **Enable Debugging Output**
@@ -421,7 +421,7 @@ Expected Output
 
 ---
 
-## 📚 9. References
+## 9. References
 
 - [Official Apache Maven Documentation](https://maven.apache.org/guides/index.html)  
 - [Maven Lifecycle Reference](https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html)  
