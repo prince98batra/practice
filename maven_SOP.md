@@ -1,27 +1,49 @@
 # 📋 SOP: Maven Common & Debugging Commands
 
-**Owner:** Prince Batra  
-**Team:** Downtime Crew  
-**Date Created:** 14-Apr-2025  
-**Last Updated:** 14-Apr-2025  
-
----
-
-## 📦 Stack Details
-
-- **Component:** Apache Maven  
-- **Application Type:** Java (Maven Project)  
-- **System:** Local (Ubuntu/Windows/Mac)  
-
+## 👤 **Author Information**
+| **Author** | **Created on** | **Version**  | **Comment** | **Reviewer** |
+|------------|----------------|--------------|-------------|--------------|
+| **Prince Batra**   | **14-04-2025**   | **Version 1** | **Internal review** | **Siddharth Pawar** |
 ---
 
 ## 🌟 Purpose
 
-This SOP covers local Maven use for Java projects, including setup, common commands, and debugging steps — useful for building, testing, and troubleshooting.
+This SOP provides local Maven usage for Java-based projects. It includes installation, commonly used Maven commands, and debugging tips. Ideal for building, testing, and troubleshooting Java apps.
 
 ---
 
-## 🛠 Prerequisites (Local Setup)
+## 📘 What is Maven?
+
+- Maven is a build automation tool for Java projects, managing builds, dependencies, and testing.
+- It simplifies the compilation, packaging, and deployment of Java applications for developers.
+- The **pom.xml** file defines project details, dependencies, plugins, and build configurations efficiently.
+
+---
+
+## 🛠️ How Maven Works
+
+Maven follows a lifecycle to compile code, run tests, and create a deployable file. 
+
+- Code is written in **src/main/java**.
+- Tests are written in **src/test/java**.
+- Maven compiles, tests, and packages it based on **pom.xml** instructions.
+
+---
+
+## 📂 Example Java Maven Project Structure
+
+Assume this folder exists:
+```bash
+java/
+├── pom.xml                     # Project Object Model file (Maven's config file)
+└── src/                        # Source folder (contains all project code)
+    └── main/                   # Main application code (not tests)
+        └── java/               # Java source files go here (e.g., .java classes)
+```
+
+---
+
+## 🛠 Prerequisites (Install on Local System)
 
 ### ✅ Step 1: Install Java (JDK 11 or higher)
 
@@ -31,16 +53,6 @@ sudo apt update
 sudo apt install openjdk-17-jdk -y
 java -version
 ```
-
-**Mac:**
-```bash
-brew install openjdk@17
-```
-
-**Windows:**  
-Download: [https://jdk.java.net](https://jdk.java.net)  
-Set `JAVA_HOME` in environment variables.
-
 ---
 
 ### ✅ Step 2: Install Maven
@@ -52,319 +64,349 @@ sudo apt install maven -y
 mvn -v
 ```
 
-**Mac:**
-```bash
-brew install maven
-```
-
-**Windows:**  
-Download: [https://maven.apache.org/download.cgi](https://maven.apache.org/download.cgi)  
-Set `MAVEN_HOME` in environment variables.
-
 ---
 
-## 📂 Java Maven Project Structure
-
-```
-java/
-├── pom.xml
-└── src/
-    └── main/
-        └── java/
-```
-
-Navigate to project:
-```bash
-cd java
-```
+## ✅ **Commonly Used Maven Commands**
 
 ---
-
-## 📘 What is Maven?
-
-Maven is a build automation tool for Java. It manages:
-
-- Compilation and packaging
-- Dependencies
-- Testing and reporting
-- Deployment
-
-All configurations are defined in `pom.xml` (Project Object Model).
-
----
-
-## 🛠️ How Maven Works
-
-When you run a Maven command, it goes through lifecycle phases:
-
-- Code lives in `src/main/java`
-- Tests in `src/test/java`
-- Maven compiles, tests, and packages using `pom.xml`
-
----
-
-## ✅ Commonly Used Maven Commands
 
 ### 1. **Clean compiled files**
-```bash
+
+- **Command:** 
+
+```
 mvn clean
 ```
-**Expected Output:**
+Expected Output
 ```
-[INFO] Deleting /target
+[INFO] Deleting /path/to/project/target
 [INFO] BUILD SUCCESS
 ```
-**Purpose:** Deletes `target/` directory  
-**When to Use:** Before building fresh to avoid using old compiled files.
+
+- **Purpose:** Removes the `target/` directory with old build files.  
+- **When to Use:** Before a fresh build to ensure no leftover files affect the process.
 
 ---
 
 ### 2. **Compile the project**
-```bash
+
+- **Command:** 
+
+```
 mvn compile
+```  
+Expected Output
 ```
-**Expected Output:**
-```
-[INFO] Compiling source to /target/classes
+[INFO] Compiling 1 source file to /path/to/project/target/classes
 [INFO] BUILD SUCCESS
 ```
-**Purpose:** Compiles `src/main/java` code  
-**When to Use:** To verify syntax and compile code before packaging.
+
+- **Purpose:** Converts source code into bytecode.  
+- **When to Use:** To check for compilation errors before testing or packaging.
 
 ---
 
 ### 3. **Run unit tests**
-```bash
+
+- **Command:** 
+```
 mvn test
+```  
+Expected Output
 ```
-**Expected Output:**
+[INFO] Running com.example.projectname.TestClass
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec
+[INFO] BUILD SUCCESS
 ```
-[INFO] Running tests
-[INFO] Tests run: X, Failures: 0
-```
-**Purpose:** Executes unit tests in `src/test/java`  
-**When to Use:** To validate logic and ensure functionality.
+
+- **Purpose:** Runs test cases from `src/test/java` using test frameworks.  
+- **When to Use:** To verify if individual components are working correctly.
 
 ---
 
 ### 4. **Create a JAR/WAR**
-```bash
+
+- **Command:** 
+
+```
 mvn package
 ```
-**Expected Output:**
+Expected Output
 ```
-[INFO] Building jar: /target/project-name.jar
+[INFO] Building jar: /path/to/project/target/project-name-1.0-SNAPSHOT.jar
+[INFO] BUILD SUCCESS
 ```
-**Purpose:** Packages compiled code  
-**When to Use:** When generating a deployable `.jar` or `.war`.
+
+- **Purpose:** Packages compiled code into deployable artifacts like `.jar` or `.war`.  
+- **When to Use:** When preparing the application for deployment or delivery.
 
 ---
 
-### 5. **Install the project locally**
-```bash
+### 5. **Install the Project Locally**
+
+- **Command:**
+```
 mvn install
 ```
-**Expected Output:**
+Expected Output
 ```
 [INFO] BUILD SUCCESS
 ```
-**Purpose:** Installs build to local `.m2` repository  
-**When to Use:** For local reuse or integration with other projects.
+
+- **Purpose:** Installs built artifact into your local Maven repository.  
+- **When to Use:** When you want the project available locally for use in other projects.
 
 ---
 
-### 6. **Deploy the project**
-```bash
+### 6. **Deploying the Project**
+
+- **Command:**
+```
 mvn deploy
 ```
-**Expected Output:**
+Expected Output
 ```
 [INFO] BUILD SUCCESS
 ```
-**Purpose:** Pushes artifact to remote repo  
-**When to Use:** When sharing builds across teams.
+
+- **Purpose:** Uploads the artifact to a remote Maven repository.  
+- **When to Use:** When sharing the project with teams or external applications.
 
 ---
 
-### 7. **Validate the project**
-```bash
+### 7. **Validate the Project**
+
+- **Command:**
+```
 mvn validate
 ```
-**Expected Output:**
+Expected Output
 ```
 [INFO] BUILD SUCCESS
 ```
-**Purpose:** Verifies project structure and configs  
-**When to Use:** Early in build to catch misconfigurations.
+
+- **Purpose:** Verifies if project structure and dependencies are correctly set.  
+- **When to Use:** For checking proper project setup before proceeding.
 
 ---
 
 ### 8. **Run integration tests**
-```bash
-mvn verify
+
+- **Command:** 
 ```
-**Expected Output:**
+mvn verify
+```  
+Expected Output
 ```
 [INFO] BUILD SUCCESS
 ```
-**Purpose:** Runs full test lifecycle  
-**When to Use:** Before final deployment.
+- **Purpose:** Runs full test lifecycle including integration tests.  
+- **When to Use:** To ensure the system works as a whole before deployment.
 
 ---
 
 ### 9. **Download all dependencies**
-```bash
-mvn dependency:resolve
+
+- **Command:** 
 ```
-**Expected Output:**
+mvn dependency:resolve 
+``` 
+Expected Output
 ```
 [INFO] Downloaded: junit:junit:4.13.2
+[INFO] BUILD SUCCESS
 ```
-**Purpose:** Downloads dependencies from `pom.xml`  
-**When to Use:** On first-time setup or resolving missing libs.
+
+- **Purpose:** Fetches all libraries defined in `pom.xml`.  
+- **When to Use:** During initial setup or when dependencies fail to resolve.
 
 ---
 
 ### 10. **Print all dependencies**
-```bash
+
+- **Command:**
+```
 mvn dependency:tree
 ```
-**Expected Output:**
+Expected Output
 ```
-├─ junit:junit:4.13.2:test
+com.example.projectname:project-name:jar:1.0-SNAPSHOT
+├── junit:junit:jar:4.13.2:test
+└── org.springframework:spring-core:jar:5.3.8
 ```
-**Purpose:** Displays full dependency hierarchy  
-**When to Use:** Debug conflicts or inspect transitive dependencies.
+- **Purpose:** Shows a tree of direct and transitive dependencies.  
+- **When to Use:** To inspect or debug library conflicts and structure.
 
 ---
 
-### 11. **Clean and build**
-```bash
+### 11. **Clean and build the project**
+
+- **Command:** 
+```
 mvn clean install
 ```
-**Expected Output:**
+Expected Output
 ```
 [INFO] BUILD SUCCESS
 ```
-**Purpose:** Clean, compile, test, and install  
-**When to Use:** To perform a full local build.
+- **Purpose:** Cleans old builds, compiles code, runs tests, installs locally.  
+- **When to Use:** For a full clean rebuild and local installation.
 
 ---
 
-### 12. **Skip tests**
-```bash
+### 12. **Skip tests during build**
+
+- **Command:** 
+```
 mvn install -DskipTests
 ```
-**Expected Output:**
+Expected Output
 ```
 [INFO] Tests are skipped.
+[INFO] BUILD SUCCESS
 ```
-**Purpose:** Builds without test execution  
-**When to Use:** During dev cycles when tests aren't needed.
+- **Purpose:** Builds and installs without running tests.  
+- **When to Use:** During quick development cycles (avoid for production builds).
 
 ---
 
-### 13. **Run specific test**
-```bash
+### 13. **Run a specific test**
+
+- **Command:** 
+```
 mvn -Dtest=ClassName test
+```  
+Expected Output
 ```
-**Expected Output:**
+[INFO] Running com.example.projectname.TestClass
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+[INFO] BUILD SUCCESS
 ```
-[INFO] Running com.example.ClassName
-```
-**Purpose:** Runs a specific test class or method  
-**When to Use:** To isolate and debug a single test case.
+- **Purpose:** Runs only a specified test class or method.  
+- **When to Use:** When focusing on or debugging a particular test.
 
 ---
+
 
 ## 😞 Debugging & Troubleshooting Commands
 
-### 1. **Enable Debug Output**
-```bash
-mvn -X
-```
-**Purpose:** Shows verbose logs  
-**When to Use:** When troubleshooting build failures.
+
+### 1. **Enable Debugging Output**
+
+- **Command:**  
+  ```bash
+  mvn -X
+  ```
+
+- **Expected Output:**  
+  ```bash
+  [DEBUG] [INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ project-name ---
+  [DEBUG] [INFO] BUILD SUCCESS
+  ```
+
+- **Purpose:** Shows detailed logs for the entire build process.  
+- **When to Use:** When builds fail and you need more context for debugging.
 
 ---
 
-### 2. **Print final POM**
-```bash
-mvn help:effective-pom
-```
-**Purpose:** Displays complete `pom.xml` with inherited config  
-**When to Use:** To understand full build settings.
+### 2. **Print the Final POM (Project Configuration)**
+
+- **Command:**  
+  ```bash
+  mvn help:effective-pom
+  ```
+
+- **Expected Output:**  
+  ```bash
+  [INFO] Scanning for projects...
+  [INFO] Effective POM for project project-name: 1.0-SNAPSHOT
+  ```
+
+- **Purpose:** Shows complete effective project configuration.  
+- **When to Use:** To view all applied POM settings including inherited ones.
 
 ---
 
-### 3. **Describe a plugin**
-```bash
-mvn help:describe -Dplugin=<plugin-name> -Ddetail
-```
-**Purpose:** Shows plugin version and usage  
-**When to Use:** To debug plugin behavior or config.
+### 3. **Show Information About a Plugin**
+
+- **Command:**  
+  ```bash
+  mvn help:describe -Dplugin=<plugin-name> -Ddetail
+  ```
+
+- **Expected Output:**  
+  ```bash
+  [INFO] Describing plugin org.apache.maven.plugins:maven-clean-plugin:3.1.0
+  ```
+
+- **Purpose:** Describes usage, goals, and config of a specific plugin.  
+- **When to Use:** When understanding or troubleshooting Maven plugins.
 
 ---
 
-### 4. **Force dependency update**
-```bash
-mvn clean install -U
-```
-**Purpose:** Updates local dependencies from remote  
-**When to Use:** If local cache has outdated/missing files.
+### 4. **Force Maven to Update Dependencies**
+
+- **Command:**  
+  ```bash
+  mvn clean install -U
+  ```
+
+- **Expected Output:**  
+  ```bash
+  [INFO] BUILD SUCCESS
+  ```
+
+- **Purpose:**  Downloads the latest versions of dependencies, even if already cached locally.
+
+- **When to Use:**  When your project uses outdated libraries or new versions are not picked up
+  
+---
+
+### 5. **Check Your Maven Version**
+
+- **Command:**  
+  ```bash
+  mvn -v
+  ```
+
+- **Expected Output:**  
+  ```bash
+  Apache Maven 3.6.3
+  Maven home: /path/to/maven
+  Java version: 1.8.0_252, vendor: Oracle Corporation
+  ```
+
+- **Purpose:**  Shows your Maven and Java versions.
+
+- **When to Use:**  To confirm installed versions or check compatibility issues.
 
 ---
 
-### 5. **Check Maven version**
-```bash
-mvn -v
-```
-**Purpose:** Shows Maven and Java versions  
-**When to Use:** For verifying setup or compatibility.
+### 6. **Show Effective Settings**
+
+- **Command:**  
+  ```bash
+  mvn help:effective-settings
+  ```
+
+- **Expected Output:**  
+  ```bash
+  [INFO] Effective settings for Maven
+  ```
+
+- **Purpose:**  Displays the final settings Maven uses (default + custom).
+
+- **When to Use:**  For debugging settings or verifying profile configurations.
 
 ---
 
-### 6. **Show dependencies**
-```bash
-mvn dependency:resolve
-```
-**Purpose:** Resolves and downloads project dependencies  
-**When to Use:** For setup or when facing missing jars.
+## 🔚 End of SOP
+
+## 📬 **Contact Information**
+| **Name** | **Email Address**        |
+|----------|--------------------------|
+| **Prince Batra**  | **prince.batra.snaatak@mygurukulam.co**   |
 
 ---
 
-### 7. **Clean and rebuild**
-```bash
-mvn clean install
-```
-**Purpose:** Performs fresh build  
-**When to Use:** After major changes or cleanup.
-
----
-
-### 8. **Show effective settings**
-```bash
-mvn help:effective-settings
-```
-**Purpose:** Displays active Maven settings  
-**When to Use:** When dealing with profile/config issues.
-
----
-
-### 9. **Run a specific test**
-```bash
-mvn -Dtest=ClassName test
-```
-**Purpose:** Re-run a single test class  
-**When to Use:** For focused debugging.
-
----
-
-## 🖚 End of SOP
-
-| Date       | Author        | Change Description         |
-|------------|---------------|----------------------------|
-| 14-Apr-25  | Prince Batra  | Initial draft              |
-
----
 
