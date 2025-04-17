@@ -25,7 +25,7 @@
   - [📍 Step 7: Run the Script Using Poetry](#-step-7-run-the-script-using-poetry-running-in-context)
 - [Conclusion](#8-Conclusion)
 - [Reference](#9-Reference)
-- [Contact Information](#10-Contact-Information)
+- [Contact Information](#Contact-Information)
 ---
 
 ## 1. Introduction
