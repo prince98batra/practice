@@ -11,9 +11,11 @@
 ---
 
 ## 📖 Table of Contents    
-- [📌 Introduction](#1-introduction)
-- [🛠 Prerequisites](#2-prerequisites)
-- [🧭 Step-by-Step Instructions](#3-step-by-step-instructions)  
+- [Introduction](#1-introduction)
+- [Prerequisites](#2-prerequisites)
+- [What is Poetry](#3-What-is-Poetry)
+- [Why Use Poetry](#3-Why-is-Poetry)
+- [Step-by-Step Instructions](#3-step-by-step-instructions)  
   - [📍 Step 1: Install Python & pip](#-step-1-install-python--pip-if-not-already-installed)  
   - [📍 Step 2: Install Poetry](#-step-2-install-poetry)  
   - [📍 Step 3: Create a New Poetry Project](#-step-3-create-a-new-poetry-project)  
@@ -24,9 +26,7 @@
 
 ---
 
-## 📘 Introduction
-
-Sure! Here's an even shorter and crisper version:
+## 1. Introduction
 
 **Poetry** is a simple, all-in-one tool for managing Python projects, dependencies, and environments—making setup and collaboration easy and consistent.
 
