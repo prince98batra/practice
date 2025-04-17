@@ -30,19 +30,20 @@ Cron is a time-based job scheduler in Unix-like operating systems. This SOP prov
 ## 2. What is cron, crontab and cronjob?
 
 **🕒 What is cron?**
+
 **cron** is like a personal assistant on your computer/server that runs tasks **automatically** at scheduled times.
 
 - Think of it like setting an alarm clock: "Do this thing every day at 6am."
 
 **📄 What is crontab?**
-**crontab** = **cron table**
 
+**crontab** = **cron table**
 - It’s a **file** where you **write down the schedule** for the tasks (aka **cron jobs**) you want to run.
 - You use the `crontab` command to **view, edit, or manage** your cron jobs.
 
 **✅ What is a cron job?**
-A **cron job** is just the **task** you want to run on a schedule.
 
+A **cron job** is just the **task** you want to run on a schedule.
 - Example: Backing up files every night at 2am.
 - In crontab, it looks like this:
 
@@ -52,6 +53,8 @@ A **cron job** is just the **task** you want to run on a schedule.
 
 This means:  
 🕑 At 2:00 AM, every day, run the `backup.sh` script.
+
+---
 
 **Check cron status**
 
