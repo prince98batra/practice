@@ -1,0 +1,5 @@
+- name: Install Redis using Ansible Role
+  hosts: sprint
+  become: true
+  roles:
+    - redis
